@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
-		46BCC3CD1FD26CA4003649D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CB1FD26CA4003649D0 /* Main.storyboard */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
-		46BCC3DA1FD275FA003649D0 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3D91FD275FA003649D0 /* BaseTabBarViewController.swift */; };
 		46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */; };
 		46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E41FD27BE1003649D0 /* ActivityViewController.storyboard */; };
 		46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */; };
@@ -45,11 +43,9 @@
 /* Begin PBXFileReference section */
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46BCC3CC1FD26CA4003649D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46BCC3D11FD26CA4003649D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46BCC3D31FD26CA4003649D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46BCC3D91FD275FA003649D0 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AccountViewController.storyboard; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/AccountViewController/AccountViewController.storyboard; sourceTree = "<absolute>"; };
 		46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditViewController.storyboard; sourceTree = "<group>"; };
 		46BCC3E41FD27BE1003649D0 /* ActivityViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActivityViewController.storyboard; sourceTree = "<group>"; };
@@ -139,12 +135,10 @@
 				46BCC3DD1FD27B9F003649D0 /* EditViewController */,
 				46BCC3DC1FD27B96003649D0 /* HomeViewController */,
 				46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */,
-				46BCC3CB1FD26CA4003649D0 /* Main.storyboard */,
 				46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */,
 				46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */,
 				46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */,
 				46BCC3D31FD26CA4003649D0 /* Info.plist */,
-				46BCC3D91FD275FA003649D0 /* BaseTabBarViewController.swift */,
 			);
 			path = GirlsHack;
 			sourceTree = "<group>";
@@ -285,7 +279,6 @@
 				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
 				46BCC3E91FD27BEC003649D0 /* HomeViewController.storyboard in Resources */,
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,
-				46BCC3CD1FD26CA4003649D0 /* Main.storyboard in Resources */,
 				46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */,
 				46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */,
 			);
@@ -395,7 +388,6 @@
 				46BCC4131FD288E9003649D0 /* NibInstantiable.swift in Sources */,
 				46BCC3EB1FD27C2F003649D0 /* AccountViewController.swift in Sources */,
 				46BCC4071FD28889003649D0 /* UINavigationController+Extensions.swift in Sources */,
-				46BCC3DA1FD275FA003649D0 /* BaseTabBarViewController.swift in Sources */,
 				46BCC3F11FD27C4A003649D0 /* EditViewController.swift in Sources */,
 				46BCC40A1FD28889003649D0 /* UIView+Extensions.swift in Sources */,
 				46BCC4041FD28889003649D0 /* UIColor+Extensions.swift in Sources */,
@@ -407,14 +399,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46BCC3CB1FD26CA4003649D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46BCC3CC1FD26CA4003649D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

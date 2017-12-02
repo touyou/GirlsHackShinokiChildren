@@ -8,6 +8,20 @@
 
 import Foundation
 import Firebase
+import CoreLocation
+
+struct Object {
+    
+    var location: CLLocation
+    var photo: UIImage
+    var message: String
+    var userId: String
+    var date: Date
+    
+    func createDictionary() -> [String: Any] {
+        
+    }
+}
 
 class AccountHelper {
     
@@ -16,7 +30,7 @@ class AccountHelper {
     let defaultStore: Firestore!
     
     private var userId: String?
-    private var ref: 
+    private var ref: DocumentReference?
     
     private init() {
         
@@ -35,7 +49,7 @@ class AccountHelper {
     
     internal func logIn(_ completion: ()->()) {
         
-        
+        userId = UIDevice.current.identifierForVendor?.uuidString
         completion()
     }
 }

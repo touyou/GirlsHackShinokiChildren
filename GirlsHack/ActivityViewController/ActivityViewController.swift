@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StampViewController: UIViewController {
+class ActivityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -15,6 +15,12 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+//        AccountHelper.shared.logIn {}
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

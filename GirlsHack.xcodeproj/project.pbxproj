@@ -37,6 +37,7 @@
 		46BCC4141FD288E9003649D0 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4101FD288E8003649D0 /* Reusable.swift */; };
 		46BCC4151FD288E9003649D0 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4111FD288E9003649D0 /* NibLoadable.swift */; };
 		46BCC4171FD2893D003649D0 /* AccountHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4161FD2893D003649D0 /* AccountHelper.swift */; };
+		46BCC4191FD29866003649D0 /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4181FD29866003649D0 /* LocalCollection.swift */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		46BCC4101FD288E8003649D0 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		46BCC4111FD288E9003649D0 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		46BCC4161FD2893D003649D0 /* AccountHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHelper.swift; sourceTree = "<group>"; };
+		46BCC4181FD29866003649D0 /* LocalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCollection.swift; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				46BCC3FF1FD28885003649D0 /* UITableView+Extensions.swift */,
 				46BCC4001FD28886003649D0 /* UIView+Extensions.swift */,
 				46BCC4031FD28888003649D0 /* UIViewController+Extensions.swift */,
+				46BCC4181FD29866003649D0 /* LocalCollection.swift */,
 				46BCC4161FD2893D003649D0 /* AccountHelper.swift */,
 			);
 			path = Helper;
@@ -312,7 +315,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -377,6 +380,7 @@
 				46BCC3EF1FD27C41003649D0 /* ActivityViewController.swift in Sources */,
 				46BCC4091FD28889003649D0 /* UITableView+Extensions.swift in Sources */,
 				46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */,
+				46BCC4191FD29866003649D0 /* LocalCollection.swift in Sources */,
 				46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */,
 				46BCC40D1FD28889003649D0 /* UIViewController+Extensions.swift in Sources */,
 				46BCC4151FD288E9003649D0 /* NibLoadable.swift in Sources */,

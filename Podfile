@@ -8,6 +8,7 @@ target 'GirlsHack' do
   # Pods for GirlsHack
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
   pod 'FirebaseUI/Auth'
   pod 'BubbleTransition', '~> 2.0.0'
   pod 'ZFRippleButton'

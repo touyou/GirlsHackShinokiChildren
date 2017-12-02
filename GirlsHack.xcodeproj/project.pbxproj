@@ -48,6 +48,7 @@
 		46BCC42F1FD2F1A0003649D0 /* StampCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */; };
 		46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC42E1FD2F1A0003649D0 /* StampCollectionViewCell.xib */; };
 		46BCC4311FD2F43E003649D0 /* StampPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4271FD2E351003649D0 /* StampPageViewController.storyboard */; };
+		46BCC4331FD2FEE8003649D0 /* FirestoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4321FD2FEE8003649D0 /* FirestoreModel.swift */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		46BCC42B1FD2ED0A003649D0 /* Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stamp.swift; sourceTree = "<group>"; };
 		46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCollectionViewCell.swift; sourceTree = "<group>"; };
 		46BCC42E1FD2F1A0003649D0 /* StampCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StampCollectionViewCell.xib; sourceTree = "<group>"; };
+		46BCC4321FD2FEE8003649D0 /* FirestoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreModel.swift; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				46BCC42B1FD2ED0A003649D0 /* Stamp.swift */,
+				46BCC4321FD2FEE8003649D0 /* FirestoreModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				46BCC4191FD29866003649D0 /* LocalCollection.swift in Sources */,
 				46BCC42F1FD2F1A0003649D0 /* StampCollectionViewCell.swift in Sources */,
 				46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */,
+				46BCC4331FD2FEE8003649D0 /* FirestoreModel.swift in Sources */,
 				46BCC40D1FD28889003649D0 /* UIViewController+Extensions.swift in Sources */,
 				46BCC4151FD288E9003649D0 /* NibLoadable.swift in Sources */,
 				46BCC3F31FD27C53003649D0 /* HomeViewController.swift in Sources */,

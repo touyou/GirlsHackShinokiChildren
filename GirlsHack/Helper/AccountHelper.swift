@@ -10,51 +10,15 @@ import Foundation
 import Firebase
 import FirebaseAuthUI
 import FirebaseFirestore
+import FirebaseStorage
 import CoreLocation
-
-struct Post {
-    
-    var latitude: Double
-    var longitude: Double
-    var photo: UIImage
-    var message: String
-    var userId: String
-    var date: Date
-    
-    var dictionary: [String: Any] {
-        
-        return [
-            "latitude": latitude,
-            "longitude": longitude,
-            "photo": photo,
-            "message": message,
-            "userId": userId,
-            "date": date]
-    }
-}
-
-extension Post: DocumentSerializable {
-    
-    init?(dictionary: [String : Any]) {
-        
-        guard let latitude = dictionary["latitude"] as? Double,
-            let longitude = dictionary["longitude"] as? Double,
-            let photo = dictionary["photo"] as? UIImage,
-            let message = dictionary["message"] as? String,
-            let userId = dictionary["userId"] as? String,
-            let date = dictionary["date"] as? Date else { return nil }
-        
-        self.init(latitude: latitude, longitude: longitude, photo: photo, message: message, userId: userId, date: date)
-    }
-}
 
 class AccountHelper {
     
     static let shared = AccountHelper()
     let cache = UserDefaults.standard
     let defaultStore: Firestore!
-    
-    private var userId: String?
+
     private var ref: DocumentReference?
     private var listener: ListenerRegistration?
     internal var query: Query? {
@@ -69,16 +33,34 @@ class AccountHelper {
         }
     }
     
-    var iconImage: UIImage?
-    var userName: String?
     var posts: [Post] = []
+    var userInfo: User?
+    
+    func loadUser() {
+        
+        guard let user = Auth.auth().currentUser else {
+            
+            return
+        }
+        
+        defaultStore.collection("users").document(user.uid).getDocument { snapshot, err in
+            
+            if let err = err {
+                
+                print("load user error: \(err.localizedDescription)")
+            } else {
+                
+                guard let data = snapshot?.data() else {
+                    
+                    return
+                }
+                self.userInfo = User(dictionary: data)
+            }
+            
+        }
+    }
     
     private init() {
-        
-        if let id = cache.object(forKey: "userId") as? String {
-            
-            userId = id
-        }
         
         defaultStore = Firestore.firestore()
         query = fetchQuery(for: "posts")
@@ -91,12 +73,11 @@ class AccountHelper {
     
     internal var isLogIn: Bool {
         
-        return userId != nil
+        return Auth.auth().currentUser != nil
     }
     
     internal func logIn(_ completion: @escaping ()->()) {
         
-        userId = UIDevice.current.identifierForVendor?.uuidString
         guard let auth = FUIAuth.defaultAuthUI() else {
             
             print("Auth Error")
@@ -149,25 +130,56 @@ class AccountHelper {
         listener?.remove()
     }
     
-    internal func fetchQuery(for key: String) -> Query {
+    internal func fetchQuery(for key: String, limit: Int? = nil) -> Query {
         
-        return defaultStore.collection(key).limit(to: 50)
+        guard let limit = limit else {
+            
+            return defaultStore.collection(key)
+        }
+        
+        return defaultStore.collection(key).limit(to: limit)
     }
     
-    internal func postData(location: CLLocation, photo: UIImage, message: String) {
+    internal func postData(location: CLLocation, photo: UIImage, message: String, completion: @escaping ()->()) {
         
         guard let user = Auth.auth().currentUser else {
             return
         }
         
-        let batch = defaultStore.batch()
-        let post = Post(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, photo: photo, message: message, userId: user.uid, date: Date())
-        let ref = defaultStore.collection("posts").document()
-        batch.setData(post.dictionary, forDocument: ref)
-        batch.commit { error in
+        var imageCount: Int
+        if let count = cache.object(forKey: "imageCount") as? Int {
             
-            guard let error = error else { return }
-            print("commit error: \(error.localizedDescription)")
+            imageCount = count + 1
+        } else {
+            
+            imageCount = 0
         }
+        cache.set(imageCount, forKey: "imageCount")
+        let imageRef = Storage.storage().reference().child("images/\(user.uid)_\(imageCount).png")
+        let _ = imageRef.putData(UIImagePNGRepresentation(photo)!, metadata: nil) { [weak self] metadata, error in
+            
+            guard let `self` = self else { return }
+            guard let metadata = metadata else { return }
+            
+            let downloadURL = metadata.downloadURL()
+            let batch = self.defaultStore.batch()
+            let post = Post(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, photoURL: (downloadURL?.absoluteString)!, message: message, userId: user.uid, date: Date())
+            let userRef = self.defaultStore.collection("users").document(user.uid).collection("posts").document()
+            let ref = self.defaultStore.collection("posts").document()
+            batch.setData(post.dictionary, forDocument: userRef)
+            batch.setData(post.dictionary, forDocument: ref)
+            
+            batch.commit { error in
+                
+                completion()
+                guard let error = error else { return }
+                print("commit error: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    internal func sortedQuery(by key: String) -> Query {
+        
+        return fetchQuery(for: "posts").order(by: key)
     }
 }

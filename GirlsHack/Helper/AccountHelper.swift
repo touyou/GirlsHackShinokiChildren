@@ -20,6 +20,7 @@ struct Object {
     
     func createDictionary() -> [String: Any] {
         
+        return ["location": location, "photo": photo, "message": message, "userId": userId, "date": date]
     }
 }
 
@@ -31,6 +32,9 @@ class AccountHelper {
     
     private var userId: String?
     private var ref: DocumentReference?
+    
+    var iconImage: UIImage?
+    var userName: String?
     
     private init() {
         
@@ -47,9 +51,30 @@ class AccountHelper {
         return userId != nil
     }
     
-    internal func logIn(_ completion: ()->()) {
+    internal func logIn(_ completion: @escaping ()->()) {
         
         userId = UIDevice.current.identifierForVendor?.uuidString
-        completion()
+        defaultStore.collection("users/\(userId!)").getDocuments() { [weak self] (querySnapshot, err) in
+            
+            guard let `self` = self else {
+                
+                return
+            }
+            
+            if let err = err {
+                
+                print("Error: \(err.localizedDescription)")
+            } else {
+                
+                guard let data = querySnapshot?.documents.first else {
+                    
+                    print("Not Found")
+                    return
+                }
+                self.iconImage = data["icon_image"] as? UIImage
+                self.userName = data["user_name"] as? String
+                completion()
+            }
+        }
     }
 }

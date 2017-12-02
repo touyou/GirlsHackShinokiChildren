@@ -8,21 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
-		46BCC3CA1FD26CA4003649D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C91FD26CA4003649D0 /* ViewController.swift */; };
 		46BCC3CD1FD26CA4003649D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CB1FD26CA4003649D0 /* Main.storyboard */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
+		46BCC3DA1FD275FA003649D0 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3D91FD275FA003649D0 /* BaseTabBarViewController.swift */; };
+		46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */; };
+		46BCC3E51FD27BE1003649D0 /* StampViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E41FD27BE1003649D0 /* StampViewController.storyboard */; };
+		46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */; };
+		46BCC3E91FD27BEC003649D0 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E81FD27BEC003649D0 /* HomeViewController.storyboard */; };
+		46BCC3EB1FD27C2F003649D0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */; };
+		46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3EC1FD27C39003649D0 /* SearchViewController.swift */; };
+		46BCC3EF1FD27C41003649D0 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3EE1FD27C41003649D0 /* StampViewController.swift */; };
+		46BCC3F11FD27C4A003649D0 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F01FD27C4A003649D0 /* EditViewController.swift */; };
+		46BCC3F31FD27C53003649D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F21FD27C53003649D0 /* HomeViewController.swift */; };
+		46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */; };
+		46BCC3F61FD27CF9003649D0 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46BCC3C91FD26CA4003649D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46BCC3CC1FD26CA4003649D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46BCC3D11FD26CA4003649D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46BCC3D31FD26CA4003649D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BCC3D91FD275FA003649D0 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AccountViewController.storyboard; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/AccountViewController/AccountViewController.storyboard; sourceTree = "<absolute>"; };
+		46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditViewController.storyboard; sourceTree = "<group>"; };
+		46BCC3E41FD27BE1003649D0 /* StampViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StampViewController.storyboard; sourceTree = "<group>"; };
+		46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
+		46BCC3E81FD27BEC003649D0 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		46BCC3EC1FD27C39003649D0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		46BCC3EE1FD27C41003649D0 /* StampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampViewController.swift; sourceTree = "<group>"; };
+		46BCC3F01FD27C4A003649D0 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		46BCC3F21FD27C53003649D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,14 +100,65 @@
 		46BCC3C61FD26CA4003649D0 /* GirlsHack */ = {
 			isa = PBXGroup;
 			children = (
+				46BCC3E01FD27BC1003649D0 /* AccountViewController */,
+				46BCC3DF1FD27BB7003649D0 /* SearchViewController */,
+				46BCC3DE1FD27BAC003649D0 /* StampViewController */,
+				46BCC3DD1FD27B9F003649D0 /* EditViewController */,
+				46BCC3DC1FD27B96003649D0 /* HomeViewController */,
 				46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */,
-				46BCC3C91FD26CA4003649D0 /* ViewController.swift */,
 				46BCC3CB1FD26CA4003649D0 /* Main.storyboard */,
 				46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */,
 				46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */,
 				46BCC3D31FD26CA4003649D0 /* Info.plist */,
+				46BCC3D91FD275FA003649D0 /* BaseTabBarViewController.swift */,
 			);
 			path = GirlsHack;
+			sourceTree = "<group>";
+		};
+		46BCC3DC1FD27B96003649D0 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46BCC3E81FD27BEC003649D0 /* HomeViewController.storyboard */,
+				46BCC3F21FD27C53003649D0 /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		46BCC3DD1FD27B9F003649D0 /* EditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */,
+				46BCC3F01FD27C4A003649D0 /* EditViewController.swift */,
+				46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */,
+			);
+			path = EditViewController;
+			sourceTree = "<group>";
+		};
+		46BCC3DE1FD27BAC003649D0 /* StampViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46BCC3E41FD27BE1003649D0 /* StampViewController.storyboard */,
+				46BCC3EE1FD27C41003649D0 /* StampViewController.swift */,
+			);
+			path = StampViewController;
+			sourceTree = "<group>";
+		};
+		46BCC3DF1FD27BB7003649D0 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */,
+				46BCC3EC1FD27C39003649D0 /* SearchViewController.swift */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		46BCC3E01FD27BC1003649D0 /* AccountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */,
+				46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */,
+			);
+			path = AccountViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +223,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */,
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
+				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
+				46BCC3E91FD27BEC003649D0 /* HomeViewController.storyboard in Resources */,
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,
 				46BCC3CD1FD26CA4003649D0 /* Main.storyboard in Resources */,
+				46BCC3E51FD27BE1003649D0 /* StampViewController.storyboard in Resources */,
+				46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,8 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46BCC3CA1FD26CA4003649D0 /* ViewController.swift in Sources */,
+				46BCC3EF1FD27C41003649D0 /* StampViewController.swift in Sources */,
+				46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */,
+				46BCC3F31FD27C53003649D0 /* HomeViewController.swift in Sources */,
 				46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */,
+				46BCC3EB1FD27C2F003649D0 /* AccountViewController.swift in Sources */,
+				46BCC3DA1FD275FA003649D0 /* BaseTabBarViewController.swift in Sources */,
+				46BCC3F11FD27C4A003649D0 /* EditViewController.swift in Sources */,
+				46BCC3F61FD27CF9003649D0 /* DummyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

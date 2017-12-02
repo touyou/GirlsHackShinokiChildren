@@ -23,6 +23,7 @@
 		46BCC3F31FD27C53003649D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F21FD27C53003649D0 /* HomeViewController.swift */; };
 		46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */; };
 		46BCC3F61FD27CF9003649D0 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */; };
+		46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		46BCC3F01FD27C4A003649D0 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		46BCC3F21FD27C53003649D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				46BCC3CB1FD26CA4003649D0 /* Main.storyboard */,
 				46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */,
 				46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */,
+				46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */,
 				46BCC3D31FD26CA4003649D0 /* Info.plist */,
 				46BCC3D91FD275FA003649D0 /* BaseTabBarViewController.swift */,
 			);
@@ -225,6 +228,7 @@
 			files = (
 				46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */,
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
+				46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */,
 				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
 				46BCC3E91FD27BEC003649D0 /* HomeViewController.storyboard in Resources */,
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,

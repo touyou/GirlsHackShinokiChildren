@@ -20,7 +20,6 @@
 		46BCC3F11FD27C4A003649D0 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F01FD27C4A003649D0 /* EditViewController.swift */; };
 		46BCC3F31FD27C53003649D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F21FD27C53003649D0 /* HomeViewController.swift */; };
 		46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */; };
-		46BCC3F61FD27CF9003649D0 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */; };
 		46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */; };
 		46BCC4041FD28889003649D0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */; };
 		46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */; };
@@ -46,6 +45,9 @@
 		46BCC4261FD2E339003649D0 /* StampPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4251FD2E339003649D0 /* StampPageViewController.swift */; };
 		46BCC4291FD2E382003649D0 /* StampCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4281FD2E382003649D0 /* StampCollectionViewController.storyboard */; };
 		46BCC42C1FD2ED0A003649D0 /* Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC42B1FD2ED0A003649D0 /* Stamp.swift */; };
+		46BCC42F1FD2F1A0003649D0 /* StampCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */; };
+		46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC42E1FD2F1A0003649D0 /* StampCollectionViewCell.xib */; };
+		46BCC4311FD2F43E003649D0 /* StampPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4271FD2E351003649D0 /* StampPageViewController.storyboard */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +67,6 @@
 		46BCC3EE1FD27C41003649D0 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		46BCC3F01FD27C4A003649D0 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		46BCC3F21FD27C53003649D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
@@ -92,6 +93,8 @@
 		46BCC4271FD2E351003649D0 /* StampPageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = StampPageViewController.storyboard; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/HomeViewController/StampPageViewController.storyboard; sourceTree = "<absolute>"; };
 		46BCC4281FD2E382003649D0 /* StampCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StampCollectionViewController.storyboard; sourceTree = "<group>"; };
 		46BCC42B1FD2ED0A003649D0 /* Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stamp.swift; sourceTree = "<group>"; };
+		46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCollectionViewCell.swift; sourceTree = "<group>"; };
+		46BCC42E1FD2F1A0003649D0 /* StampCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StampCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				46BCC4271FD2E351003649D0 /* StampPageViewController.storyboard */,
 				46BCC4231FD2AB73003649D0 /* StampCollectionViewController.swift */,
 				46BCC4281FD2E382003649D0 /* StampCollectionViewController.storyboard */,
+				46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */,
+				46BCC42E1FD2F1A0003649D0 /* StampCollectionViewCell.xib */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -184,7 +189,6 @@
 			children = (
 				46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */,
 				46BCC3F01FD27C4A003649D0 /* EditViewController.swift */,
-				46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */,
 			);
 			path = EditViewController;
 			sourceTree = "<group>";
@@ -318,6 +322,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BCC4311FD2F43E003649D0 /* StampPageViewController.storyboard in Resources */,
+				46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */,
 				46BCC41E1FD2A478003649D0 /* PopupViewController.storyboard in Resources */,
 				46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */,
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
@@ -360,7 +366,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -428,6 +434,7 @@
 				46BCC4091FD28889003649D0 /* UITableView+Extensions.swift in Sources */,
 				46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */,
 				46BCC4191FD29866003649D0 /* LocalCollection.swift in Sources */,
+				46BCC42F1FD2F1A0003649D0 /* StampCollectionViewCell.swift in Sources */,
 				46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */,
 				46BCC40D1FD28889003649D0 /* UIViewController+Extensions.swift in Sources */,
 				46BCC4151FD288E9003649D0 /* NibLoadable.swift in Sources */,
@@ -449,7 +456,6 @@
 				46BCC3F11FD27C4A003649D0 /* EditViewController.swift in Sources */,
 				46BCC40A1FD28889003649D0 /* UIView+Extensions.swift in Sources */,
 				46BCC4041FD28889003649D0 /* UIColor+Extensions.swift in Sources */,
-				46BCC3F61FD27CF9003649D0 /* DummyViewController.swift in Sources */,
 				46BCC40B1FD28889003649D0 /* UIImage+Extensions.swift in Sources */,
 				46BCC41C1FD2A46C003649D0 /* PopupViewController.swift in Sources */,
 			);

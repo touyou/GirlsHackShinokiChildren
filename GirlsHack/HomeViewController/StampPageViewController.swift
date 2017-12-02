@@ -11,6 +11,8 @@ import RealmSwift
 
 class StampPageViewController: UIPageViewController {
 
+    static let stampCountPerPage: Int = 12
+    
     var stamps: [Stamp] = []
     var currentStart: Int = 0
     
@@ -28,9 +30,9 @@ class StampPageViewController: UIPageViewController {
     
     func goForward() {
         
-        if currentStart + 9 < stamps.count {
+        if currentStart + StampPageViewController.stampCountPerPage < stamps.count {
             
-            currentStart += 9
+            currentStart += StampPageViewController.stampCountPerPage
             let viewController = StampCollectionViewController.instantiate()
             viewController.stamps = Array(stamps.dropFirst(currentStart).prefix(9))
             self.setViewControllers([viewController], direction: .forward, animated: true, completion: nil)
@@ -39,9 +41,9 @@ class StampPageViewController: UIPageViewController {
     
     func goBack() {
         
-        if currentStart - 9 >= 0 {
+        if currentStart - StampPageViewController.stampCountPerPage >= 0 {
             
-            currentStart -= 9
+            currentStart -= StampPageViewController.stampCountPerPage
             let viewController = StampCollectionViewController.instantiate()
             viewController.stamps = Array(stamps.dropFirst(currentStart).prefix(9))
         }
@@ -54,26 +56,26 @@ extension StampPageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        if currentStart + 9 >= stamps.count {
+        if currentStart + StampPageViewController.stampCountPerPage >= stamps.count {
             
             return nil
         }
         
         let viewController = StampCollectionViewController.instantiate()
-        let afterStart = currentStart + 9
+        let afterStart = currentStart + StampPageViewController.stampCountPerPage
         viewController.stamps = Array(stamps.dropFirst(afterStart).prefix(9))
         return viewController
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        if currentStart - 9 < 0 {
+        if currentStart - StampPageViewController.stampCountPerPage < 0 {
             
             return nil
         }
         
         let viewController = StampCollectionViewController.instantiate()
-        let beforeStart = currentStart - 9
+        let beforeStart = currentStart - StampPageViewController.stampCountPerPage
         viewController.stamps = Array(stamps.dropFirst(beforeStart).prefix(9))
         return viewController
     }

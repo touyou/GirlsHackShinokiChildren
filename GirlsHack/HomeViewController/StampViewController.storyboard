@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,7 +48,10 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPe-fk-Kbf">
-                                <rect key="frame" x="53" y="149" width="269" height="368"/>
+                                <rect key="frame" x="53" y="153.5" width="269" height="359"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SPe-fk-Kbf" secondAttribute="height" multiplier="3:4" id="DNB-wN-IhD"/>
+                                </constraints>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,7 +60,6 @@
                             <constraint firstItem="SPe-fk-Kbf" firstAttribute="centerX" secondItem="JNm-Uk-Eki" secondAttribute="centerX" id="1od-QK-F2d"/>
                             <constraint firstItem="iEN-7P-rqd" firstAttribute="top" secondItem="D5x-lg-3vk" secondAttribute="top" id="84M-zJ-fa1"/>
                             <constraint firstItem="X3u-CD-nBb" firstAttribute="centerY" secondItem="JNm-Uk-Eki" secondAttribute="centerY" id="BQ0-Nk-LFN"/>
-                            <constraint firstItem="D5x-lg-3vk" firstAttribute="bottom" secondItem="SPe-fk-Kbf" secondAttribute="bottom" constant="150" id="Cbw-pR-dSl"/>
                             <constraint firstItem="PbB-ES-a16" firstAttribute="centerY" secondItem="JNm-Uk-Eki" secondAttribute="centerY" id="Ofy-aI-eXA"/>
                             <constraint firstItem="D5x-lg-3vk" firstAttribute="trailing" secondItem="X3u-CD-nBb" secondAttribute="trailing" constant="15" id="hsm-QG-l6t"/>
                             <constraint firstItem="D5x-lg-3vk" firstAttribute="trailing" secondItem="iEN-7P-rqd" secondAttribute="trailing" constant="25" id="iSC-EH-rJB"/>

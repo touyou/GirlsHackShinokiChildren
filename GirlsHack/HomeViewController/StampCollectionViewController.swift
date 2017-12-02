@@ -17,6 +17,8 @@ class StampCollectionViewController: UIViewController {
             collectionView.dataSource = self
             collectionView.delegate = self
             collectionView.isScrollEnabled = false
+            
+            collectionView.register(StampCollectionViewCell.self)
         }
     }
     
@@ -45,12 +47,28 @@ extension StampCollectionViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 9
+        return StampPageViewController.stampCountPerPage
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: StampCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+
+        if indexPath.row < stamps.count {
+            
+            cell.iconImageView.image = stamps[indexPath.row].iconImage
+            cell.photoImageView.image = stamps[indexPath.row].photo
+        } else {
+            
+            // TODO: スタンプが無い時
+        }
         
-        return UICollectionViewCell()
+        // レイアウト確認用
+        if indexPath.row % 2 == 0 {
+            
+            cell.backgroundColor = UIColor.cyan
+        }
+        
+        return cell
     }
 }
 

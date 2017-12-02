@@ -24,6 +24,21 @@
 		46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */; };
 		46BCC3F61FD27CF9003649D0 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */; };
 		46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */; };
+		46BCC4041FD28889003649D0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */; };
+		46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */; };
+		46BCC4061FD28889003649D0 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FC1FD28882003649D0 /* UIAlertController.swift */; };
+		46BCC4071FD28889003649D0 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FD1FD28883003649D0 /* UINavigationController+Extensions.swift */; };
+		46BCC4081FD28889003649D0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FE1FD28884003649D0 /* UIApplication+Extensions.swift */; };
+		46BCC4091FD28889003649D0 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FF1FD28885003649D0 /* UITableView+Extensions.swift */; };
+		46BCC40A1FD28889003649D0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4001FD28886003649D0 /* UIView+Extensions.swift */; };
+		46BCC40B1FD28889003649D0 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4011FD28887003649D0 /* UIImage+Extensions.swift */; };
+		46BCC40C1FD28889003649D0 /* UITabBarController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4021FD28888003649D0 /* UITabBarController+Extensions.swift */; };
+		46BCC40D1FD28889003649D0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4031FD28888003649D0 /* UIViewController+Extensions.swift */; };
+		46BCC4121FD288E9003649D0 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC40E1FD288E6003649D0 /* StoryboardInstantiable.swift */; };
+		46BCC4131FD288E9003649D0 /* NibInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC40F1FD288E7003649D0 /* NibInstantiable.swift */; };
+		46BCC4141FD288E9003649D0 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4101FD288E8003649D0 /* Reusable.swift */; };
+		46BCC4151FD288E9003649D0 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4111FD288E9003649D0 /* NibLoadable.swift */; };
+		46BCC4171FD2893D003649D0 /* AccountHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4161FD2893D003649D0 /* AccountHelper.swift */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +62,21 @@
 		46BCC3F21FD27C53003649D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		46BCC3F51FD27CF9003649D0 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC3FC1FD28882003649D0 /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		46BCC3FD1FD28883003649D0 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC3FE1FD28884003649D0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC3FF1FD28885003649D0 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC4001FD28886003649D0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC4011FD28887003649D0 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC4021FD28888003649D0 /* UITabBarController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC4031FD28888003649D0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC40E1FD288E6003649D0 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		46BCC40F1FD288E7003649D0 /* NibInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiable.swift; sourceTree = "<group>"; };
+		46BCC4101FD288E8003649D0 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		46BCC4111FD288E9003649D0 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		46BCC4161FD2893D003649D0 /* AccountHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHelper.swift; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +132,7 @@
 		46BCC3C61FD26CA4003649D0 /* GirlsHack */ = {
 			isa = PBXGroup;
 			children = (
+				46BCC3F91FD28866003649D0 /* Helper */,
 				46BCC3E01FD27BC1003649D0 /* AccountViewController */,
 				46BCC3DF1FD27BB7003649D0 /* SearchViewController */,
 				46BCC3DE1FD27BAC003649D0 /* ActivityViewController */,
@@ -162,6 +193,28 @@
 				46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */,
 			);
 			path = AccountViewController;
+			sourceTree = "<group>";
+		};
+		46BCC3F91FD28866003649D0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				46BCC40F1FD288E7003649D0 /* NibInstantiable.swift */,
+				46BCC4111FD288E9003649D0 /* NibLoadable.swift */,
+				46BCC4101FD288E8003649D0 /* Reusable.swift */,
+				46BCC40E1FD288E6003649D0 /* StoryboardInstantiable.swift */,
+				46BCC3FC1FD28882003649D0 /* UIAlertController.swift */,
+				46BCC3FE1FD28884003649D0 /* UIApplication+Extensions.swift */,
+				46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */,
+				46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */,
+				46BCC4011FD28887003649D0 /* UIImage+Extensions.swift */,
+				46BCC3FD1FD28883003649D0 /* UINavigationController+Extensions.swift */,
+				46BCC4021FD28888003649D0 /* UITabBarController+Extensions.swift */,
+				46BCC3FF1FD28885003649D0 /* UITableView+Extensions.swift */,
+				46BCC4001FD28886003649D0 /* UIView+Extensions.swift */,
+				46BCC4031FD28888003649D0 /* UIViewController+Extensions.swift */,
+				46BCC4161FD2893D003649D0 /* AccountHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +335,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/BubbleTransition/BubbleTransition.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+				"${BUILT_PRODUCTS_DIR}/ZFRippleButton/ZFRippleButton.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
@@ -295,9 +352,13 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BubbleTransition.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZFRippleButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
@@ -318,13 +379,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				46BCC3EF1FD27C41003649D0 /* ActivityViewController.swift in Sources */,
+				46BCC4091FD28889003649D0 /* UITableView+Extensions.swift in Sources */,
 				46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */,
+				46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */,
+				46BCC40D1FD28889003649D0 /* UIViewController+Extensions.swift in Sources */,
+				46BCC4151FD288E9003649D0 /* NibLoadable.swift in Sources */,
 				46BCC3F31FD27C53003649D0 /* HomeViewController.swift in Sources */,
+				46BCC4141FD288E9003649D0 /* Reusable.swift in Sources */,
+				46BCC4171FD2893D003649D0 /* AccountHelper.swift in Sources */,
+				46BCC4081FD28889003649D0 /* UIApplication+Extensions.swift in Sources */,
+				46BCC40C1FD28889003649D0 /* UITabBarController+Extensions.swift in Sources */,
+				46BCC4121FD288E9003649D0 /* StoryboardInstantiable.swift in Sources */,
+				46BCC4061FD28889003649D0 /* UIAlertController.swift in Sources */,
 				46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */,
+				46BCC4131FD288E9003649D0 /* NibInstantiable.swift in Sources */,
 				46BCC3EB1FD27C2F003649D0 /* AccountViewController.swift in Sources */,
+				46BCC4071FD28889003649D0 /* UINavigationController+Extensions.swift in Sources */,
 				46BCC3DA1FD275FA003649D0 /* BaseTabBarViewController.swift in Sources */,
 				46BCC3F11FD27C4A003649D0 /* EditViewController.swift in Sources */,
+				46BCC40A1FD28889003649D0 /* UIView+Extensions.swift in Sources */,
+				46BCC4041FD28889003649D0 /* UIColor+Extensions.swift in Sources */,
 				46BCC3F61FD27CF9003649D0 /* DummyViewController.swift in Sources */,
+				46BCC40B1FD28889003649D0 /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

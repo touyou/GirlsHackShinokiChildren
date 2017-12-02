@@ -15,6 +15,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FvB-Ma-iko" customClass="BaseTabBarViewController" customModule="GirlsHack" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qxf-4T-GbE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -50,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="1683.2" y="533.43328335832086"/>
         </scene>
-        <!--StampViewController-->
+        <!--ActivityViewController-->
         <scene sceneID="QVj-dR-HHk">
             <objects>
-                <viewControllerPlaceholder storyboardName="StampViewController" id="phA-Gq-kYZ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ActivityViewController" id="phA-Gq-kYZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="VlU-0c-8mI"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ifs-kQ-Yu6" userLabel="First Responder" sceneMemberID="firstResponder"/>

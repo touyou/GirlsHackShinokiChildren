@@ -9,5 +9,9 @@ target 'GirlsHack' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
+  pod 'RAMAnimatedTabBarController'
+  pod 'BubbleTransition', '~> 2.0.0'
+  pod 'ZFRippleButton'
+  pod 'XLPagerTabStrip', '~> 8.0'
 
 end

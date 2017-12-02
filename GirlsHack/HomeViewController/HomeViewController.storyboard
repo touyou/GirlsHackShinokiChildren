@@ -20,11 +20,33 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="1qn-i2-3Sf"/>
+                    <navigationItem key="navigationItem" title="Home" id="1qn-i2-3Sf">
+                        <barButtonItem key="leftBarButtonItem" title="stamp" id="ZJe-lO-rrA">
+                            <connections>
+                                <action selector="tappedStampButton:" destination="BYZ-38-t0r" id="uWB-O5-Fbm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="search" id="CnO-6Z-r3n">
+                            <connections>
+                                <action selector="tappedSearchButton:" destination="BYZ-38-t0r" id="eAZ-0j-IZx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="IDq-bQ-4dL" kind="presentation" identifier="popupNotification" id="pbF-Wi-Mwz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="106"/>
+            <point key="canvasLocation" x="686" y="106"/>
+        </scene>
+        <!--PopupViewController-->
+        <scene sceneID="Jjh-y3-6Qw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PopupViewController" id="IDq-bQ-4dL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKV-b0-g9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="105"/>
         </scene>
         <!--Home-->
         <scene sceneID="sFx-s5-bSk">

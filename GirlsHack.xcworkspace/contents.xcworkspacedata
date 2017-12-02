@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/touyou/iPhoneApp/GirlsHack/GirlsHack/HomeViewController/StampPageViewController.storyboard">
+   </FileRef>
+   <FileRef
       location = "group:GirlsHack.xcodeproj">
    </FileRef>
    <FileRef

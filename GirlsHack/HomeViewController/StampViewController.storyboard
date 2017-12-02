@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PGE-05-Bhx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stamp View Controller-->
+        <scene sceneID="ZKM-0C-fuI">
+            <objects>
+                <viewController id="PGE-05-Bhx" customClass="StampViewController" customModule="GirlsHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JNm-Uk-Eki">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEN-7P-rqd">
+                                <rect key="frame" x="320" y="20" width="30" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="×">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpInsideExitButton:" destination="PGE-05-Bhx" eventType="touchUpInside" id="sdR-XP-BYv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3u-CD-nBb">
+                                <rect key="frame" x="330" y="318" width="30" height="30"/>
+                                <state key="normal" title="＞">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpInsideForwardButton:" destination="PGE-05-Bhx" eventType="touchUpInside" id="P4I-OJ-MrP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbB-ES-a16">
+                                <rect key="frame" x="15" y="318" width="30" height="30"/>
+                                <state key="normal" title="＜">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpInsideBackButton:" destination="PGE-05-Bhx" eventType="touchUpInside" id="57O-RL-VZb"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPe-fk-Kbf">
+                                <rect key="frame" x="53" y="149" width="269" height="368"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SPe-fk-Kbf" firstAttribute="centerY" secondItem="JNm-Uk-Eki" secondAttribute="centerY" id="0DL-KZ-ghc"/>
+                            <constraint firstItem="SPe-fk-Kbf" firstAttribute="centerX" secondItem="JNm-Uk-Eki" secondAttribute="centerX" id="1od-QK-F2d"/>
+                            <constraint firstItem="iEN-7P-rqd" firstAttribute="top" secondItem="D5x-lg-3vk" secondAttribute="top" id="84M-zJ-fa1"/>
+                            <constraint firstItem="X3u-CD-nBb" firstAttribute="centerY" secondItem="JNm-Uk-Eki" secondAttribute="centerY" id="BQ0-Nk-LFN"/>
+                            <constraint firstItem="D5x-lg-3vk" firstAttribute="bottom" secondItem="SPe-fk-Kbf" secondAttribute="bottom" constant="150" id="Cbw-pR-dSl"/>
+                            <constraint firstItem="PbB-ES-a16" firstAttribute="centerY" secondItem="JNm-Uk-Eki" secondAttribute="centerY" id="Ofy-aI-eXA"/>
+                            <constraint firstItem="D5x-lg-3vk" firstAttribute="trailing" secondItem="X3u-CD-nBb" secondAttribute="trailing" constant="15" id="hsm-QG-l6t"/>
+                            <constraint firstItem="D5x-lg-3vk" firstAttribute="trailing" secondItem="iEN-7P-rqd" secondAttribute="trailing" constant="25" id="iSC-EH-rJB"/>
+                            <constraint firstItem="PbB-ES-a16" firstAttribute="leading" secondItem="D5x-lg-3vk" secondAttribute="leading" constant="15" id="qK1-kA-26I"/>
+                            <constraint firstItem="SPe-fk-Kbf" firstAttribute="leading" secondItem="PbB-ES-a16" secondAttribute="trailing" constant="8" id="sbG-m7-VK1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D5x-lg-3vk"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="SPe-fk-Kbf" id="7ed-8N-J4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="puU-P8-pjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="146.17691154422789"/>
+        </scene>
+    </scenes>
+</document>

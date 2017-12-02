@@ -9,11 +9,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    static var kAssocKeyWindow: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        performSegue(withIdentifier: "popupNotification", sender: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -27,15 +30,26 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func tappedStampButton(_ sender: Any) {
+        
+        let newWindow = UIWindow()
+        newWindow.frame = UIScreen.main.bounds
+        newWindow.alpha = 0.0
+        newWindow.rootViewController = StampViewController.instantiate()
+        newWindow.backgroundColor = UIColor(white: 0, alpha: 0.6)
+        newWindow.windowLevel = UIWindowLevelNormal + 5
+        newWindow.makeKeyAndVisible()
+        
+        objc_setAssociatedObject(UIApplication.shared, &HomeViewController.kAssocKeyWindow, newWindow, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        
+        UIView.transition(with: newWindow, duration: 0.2, options: [.transitionCrossDissolve, .curveEaseIn], animations: {
+            
+            newWindow.alpha = 1.0
+        }, completion: { finished in})
     }
-    */
-
+    
+    @IBAction func tappedSearchButton(_ sender: Any) {
+        
+        // TODO: searchへの遷移
+    }
 }

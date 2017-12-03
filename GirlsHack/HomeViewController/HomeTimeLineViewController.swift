@@ -10,14 +10,14 @@ import UIKit
 import XLPagerTabStrip
 
 
-class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICollectionViewDataSource {
+class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICollectionViewDataSource,UICollectionViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView! {
 
         didSet {
 
             collectionView.dataSource = self
-
+            collectionView.delegate = self
             collectionView.register(HomeTimeLineCollectionViewCell.self)
         }
     }
@@ -34,7 +34,7 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell: HomeTimeLineCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-
+        cell.backgroundColor = .white
         //セルの画像を設定する
         //cell.imageView.image = UIImage(named:"hoge.png")
         //影をつける
@@ -44,6 +44,14 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
         cell.layer.shadowRadius = 2.0;
 
         return cell
+    }
+
+    //セル選択時に呼び出されるメソッド
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell: HomeTimeLineCollectionViewCell = collectionView.cellForItem(at: indexPath) as! HomeTimeLineCollectionViewCell
+
+        //セルの中のラベルの値を変更する。
+        cell.backgroundColor = .red
     }
 
     override func viewDidLoad() {
@@ -77,14 +85,14 @@ extension HomeTimeLineViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        let cellWidth = floor(collectionView.bounds.width)
+        let cellWidth = floor(collectionView.bounds.width*4/5)
 
         return CGSize(width: cellWidth, height: cellWidth)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 
-        return 0
+        return floor(collectionView.bounds.width*1/10)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

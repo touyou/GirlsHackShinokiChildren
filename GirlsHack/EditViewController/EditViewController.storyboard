@@ -1,29 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J7R-hu-fQe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UFg-YD-HoL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Edit View Controller-->
+        <!--写真を選択する-->
         <scene sceneID="e37-OQ-Cfr">
             <objects>
                 <viewController id="J7R-hu-fQe" customClass="EditViewController" customModule="GirlsHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WE5-Xy-ajw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pQW-8H-JOr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pQW-8H-JOr" secondAttribute="height" multiplier="1:1" id="Lnu-vr-4Yt"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pcJ-kp-K1A">
+                                <rect key="frame" x="0.0" y="439" width="375" height="228"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xRP-Ra-fbB">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iyR-gJ-iOg">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pQW-8H-JOr" firstAttribute="trailing" secondItem="h4v-xL-V36" secondAttribute="trailing" id="P4V-iX-F2p"/>
+                            <constraint firstItem="pQW-8H-JOr" firstAttribute="leading" secondItem="h4v-xL-V36" secondAttribute="leading" id="cIL-4r-m9g"/>
+                            <constraint firstItem="pcJ-kp-K1A" firstAttribute="leading" secondItem="h4v-xL-V36" secondAttribute="leading" id="cSR-af-KIW"/>
+                            <constraint firstItem="pcJ-kp-K1A" firstAttribute="top" secondItem="pQW-8H-JOr" secondAttribute="bottom" id="czr-js-5Zs"/>
+                            <constraint firstItem="pcJ-kp-K1A" firstAttribute="bottom" secondItem="h4v-xL-V36" secondAttribute="bottom" id="ifO-HE-guV"/>
+                            <constraint firstItem="pQW-8H-JOr" firstAttribute="top" secondItem="h4v-xL-V36" secondAttribute="top" id="jqU-AX-VHe"/>
+                            <constraint firstItem="pcJ-kp-K1A" firstAttribute="trailing" secondItem="h4v-xL-V36" secondAttribute="trailing" id="why-wx-XUU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h4v-xL-V36"/>
                     </view>
+                    <navigationItem key="navigationItem" title="写真を選択する" id="apB-8z-nXO">
+                        <barButtonItem key="leftBarButtonItem" title="キャンセル" id="G2U-DN-Kv1">
+                            <connections>
+                                <action selector="touchUpInsideCancelButton:" destination="J7R-hu-fQe" id="NN2-nH-IMp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="次へ" id="NO3-fY-qJa"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="pcJ-kp-K1A" id="niQ-VQ-EeW"/>
+                        <outlet property="previewImageView" destination="pQW-8H-JOr" id="zFV-PN-8HI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6pQ-8R-V4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1497" y="854"/>
+            <point key="canvasLocation" x="1836" y="853.22338830584715"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wro-xj-SZp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UFg-YD-HoL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gsv-IP-GPK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J7R-hu-fQe" kind="relationship" relationship="rootViewController" id="SK1-nr-KZf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hby-P1-MdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="848"/>
         </scene>
     </scenes>
 </document>

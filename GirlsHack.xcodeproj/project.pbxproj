@@ -58,6 +58,7 @@
 		46BCC43F1FD3981E003649D0 /* HomeTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */; };
 		46BCC4411FD39984003649D0 /* HomeMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */; };
 		46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */; };
+		58BA42421FD3A9B5006C9C60 /* LucidaGrande.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,8 @@
 		46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTimeLineViewController.swift; sourceTree = "<group>"; };
 		46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeMapViewController.storyboard; sourceTree = "<group>"; };
 		46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTimeLineViewController.storyboard; sourceTree = "<group>"; };
+		58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = LucidaGrande.ttc; sourceTree = "<group>"; };
+		58BA42441FD3AB79006C9C60 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ohisama_ls.png; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +173,7 @@
 		46BCC3C61FD26CA4003649D0 /* GirlsHack */ = {
 			isa = PBXGroup;
 			children = (
+				58BA42401FD3A949006C9C60 /* assets */,
 				46BCC42A1FD2ECFE003649D0 /* Model */,
 				46BCC41A1FD2A43E003649D0 /* PopupViewController */,
 				46BCC3F91FD28866003649D0 /* Helper */,
@@ -290,6 +294,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		58BA42401FD3A949006C9C60 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				58BA42441FD3AB79006C9C60 /* ohisama_ls.png */,
+				58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,6 +377,7 @@
 				46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */,
 				46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */,
 				46BCC4291FD2E382003649D0 /* StampCollectionViewController.storyboard in Resources */,
+				58BA42421FD3A9B5006C9C60 /* LucidaGrande.ttc in Resources */,
 				4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */,
 				46BCC43B1FD392E8003649D0 /* SearchResultCollectionViewCell.xib in Resources */,
 				46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */,

@@ -10,10 +10,30 @@ import UIKit
 import XLPagerTabStrip
 
 
-class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider {
+class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICollectionViewDataSource {
 
     // タブのタイトルを設定
     var itemInfo: IndicatorInfo = "TimeLine"
+
+    //データの個数を返すメソッド
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        return 100
+    }
+
+    //データを返すメソッド
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        //コレクションビューから識別子「CafeCell」のセルを取得する。
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CafeCell", for: indexPath as IndexPath) as UICollectionViewCell
+
+        //セルの背景色をランダムに設定する。
+        cell.backgroundColor = UIColor(red: 0.5,
+                                       green: 0.5,
+                                       blue: 0,
+                                       alpha: 1.0)
+        return cell
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

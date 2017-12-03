@@ -14,6 +14,7 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
     static var kAssocKeyWindow: String?
 
     override func viewDidLoad() {
+        
         settings.style.buttonBarBackgroundColor = .white
         // ButtonBarItemの背景色
         settings.style.buttonBarItemBackgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -27,6 +28,7 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarLeftContentInset = 0
         settings.style.buttonBarRightContentInset = 0
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
+            
             guard changeCurrentIndex == true else { return }
             // 選択されていないボタンのテキスト色
             oldCell?.label.textColor = .black
@@ -45,12 +47,13 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
 
 //        AccountHelper.shared.logIn {}
     }
+    
     /// ViewControllers
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
 
         // 追加したViewControllerを指定
-        let firstVC = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateViewController(withIdentifier: "HomeTimeLine")
-        let secondVC = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateViewController(withIdentifier: "HomeMap")
+        let firstVC = HomeTimeLineViewController.instantiate()
+        let secondVC = HomeMapViewController.instantiate()
 
         // ViewControllersに入れる
         let childViewControllers:[UIViewController] = [firstVC, secondVC]
@@ -82,6 +85,6 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
 
     @IBAction func tappedSearchButton(_ sender: Any) {
 
-        // TODO: searchへの遷移
+        performSegue(withIdentifier: "toSearchView", sender: nil)
     }
 }

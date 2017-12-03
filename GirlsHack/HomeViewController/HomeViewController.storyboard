@@ -18,10 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DKq-Fh-cKI" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DKq-Fh-cKI" customClass="ButtonBarView" customModule="XLPagerTabStrip">
                                 <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Scp-l3-84T"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bN3-tH-0Cy">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -30,12 +32,20 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRp-V5-03b">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRp-V5-03b">
                                 <rect key="frame" x="0.0" y="122" width="375" height="545"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DKq-Fh-cKI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="07h-ox-bFV"/>
+                            <constraint firstItem="DKq-Fh-cKI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3DT-Xr-mJJ"/>
+                            <constraint firstItem="PRp-V5-03b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DG3-3R-eLv"/>
+                            <constraint firstItem="PRp-V5-03b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dcn-O1-8A4"/>
+                            <constraint firstItem="PRp-V5-03b" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WTa-Bc-0XC"/>
+                            <constraint firstItem="PRp-V5-03b" firstAttribute="top" secondItem="DKq-Fh-cKI" secondAttribute="bottom" constant="8" id="gEk-bj-q3X"/>
+                            <constraint firstItem="DKq-Fh-cKI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hlE-dw-5eB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="1qn-i2-3Sf">
@@ -51,8 +61,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonBarView" destination="DKq-Fh-cKI" id="3tv-5L-ufo"/>
+                        <outlet property="containerView" destination="PRp-V5-03b" id="z2g-Lf-Loc"/>
                         <segue destination="IDq-bQ-4dL" kind="presentation" identifier="popupNotification" id="pbF-Wi-Mwz"/>
-                        <segue destination="NQw-Ie-WCh" kind="show" id="uGi-nQ-rqm"/>
+                        <segue destination="NQw-Ie-WCh" kind="show" identifier="toSearchView" id="uGi-nQ-rqm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

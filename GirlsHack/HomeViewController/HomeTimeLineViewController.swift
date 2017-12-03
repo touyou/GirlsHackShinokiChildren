@@ -41,3 +41,5 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider {
     */
 
 }
+
+extension HomeTimeLineViewController: StoryboardInstantiable {}

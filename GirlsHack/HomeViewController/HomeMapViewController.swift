@@ -12,7 +12,7 @@ import XLPagerTabStrip
 class HomeMapViewController: UIViewController, IndicatorInfoProvider {    // 「IndicatorInfoProvider」を追加
 
     // タブのタイトルを設定
-    var itemInfo = IndicatorInfo(image: , highlightedImage: <#T##UIImage?#>)
+        var itemInfo = IndicatorInfo(image: #imageLiteral(resourceName: "map icon_off"), highlightedImage: #imageLiteral(resourceName: "map icon"))
     override func viewDidLoad() {
         super.viewDidLoad()
 

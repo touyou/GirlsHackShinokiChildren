@@ -17,7 +17,21 @@
                     <view key="view" contentMode="scaleToFill" id="AKY-h1-ekB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.19656848439999999" blue="0.22000354110000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activityView.png" translatesAutoresizingMaskIntoConstraints="NO" id="ASZ-Ib-PR4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="603" id="fQv-Jb-G25"/>
+                                    <constraint firstAttribute="width" constant="375" id="mRy-Iv-3VG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ASZ-Ib-PR4" firstAttribute="trailing" secondItem="NFa-et-NVC" secondAttribute="trailing" id="HlX-Er-pfJ"/>
+                            <constraint firstItem="ASZ-Ib-PR4" firstAttribute="bottom" secondItem="NFa-et-NVC" secondAttribute="bottom" id="Lu0-Jc-6mq"/>
+                            <constraint firstItem="ASZ-Ib-PR4" firstAttribute="top" secondItem="NFa-et-NVC" secondAttribute="top" id="T75-VY-Sao"/>
+                            <constraint firstItem="ASZ-Ib-PR4" firstAttribute="leading" secondItem="NFa-et-NVC" secondAttribute="leading" id="UNP-KH-ykd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NFa-et-NVC"/>
                     </view>
                     <navigationItem key="navigationItem" id="dVf-kv-R7h"/>
@@ -25,7 +39,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ge-Qm-vC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2516" y="1246"/>
+            <point key="canvasLocation" x="2516" y="1245.4272863568217"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="activityView.png" width="375" height="604"/>
+    </resources>
 </document>

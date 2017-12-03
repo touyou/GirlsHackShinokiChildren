@@ -21,11 +21,12 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
         }
     }
     // タブのタイトルを設定
-    var itemInfo = IndicatorInfo(image: <#T##UIImage?#>, highlightedImage: <#T##UIImage?#>)
+    var itemInfo: IndicatorInfo = IndicatorInfo (image: #imageLiteral(resourceName: "timeline icon"), highlightedImage: #imageLiteral(resourceName: "timeline icon_on"))
+
     //データの個数を返すメソッド
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return 10
+        return 2
     }
 
     //データを返すメソッド
@@ -33,13 +34,10 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
     {
         let cell: HomeTimeLineCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.backgroundColor = .white
+
+        let imgArray = [UIImage(named: "timeline01.png"), UIImage(named: "timeline02.png")]
         //セルの画像を設定する
-        //cell.imageView.image = UIImage(named:"hoge.png")
-        //影をつける
-        cell.layer.masksToBounds = false; //必須
-        cell.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        cell.layer.shadowOpacity = 0.9;
-        cell.layer.shadowRadius = 2.0;
+        cell.imageView.image = imgArray[indexPath.row]
 
         return cell
     }
@@ -66,6 +64,7 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
     }
 
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+
         return itemInfo
     }
 
@@ -85,14 +84,14 @@ extension HomeTimeLineViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        let cellWidth = floor(collectionView.bounds.width*4/5)
+        let cellWidth = floor(collectionView.bounds.width*9/10)
 
         return CGSize(width: cellWidth, height: cellWidth)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 
-        return floor(collectionView.bounds.width*1/10)
+        return floor(collectionView.bounds.width*1/20)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

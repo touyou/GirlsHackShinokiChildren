@@ -9,6 +9,24 @@
 /* Begin PBXBuildFile section */
 		4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */; };
 		4664F9F51FD3A71E0030A171 /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9F41FD3A71E0030A171 /* AccountViewController.storyboard */; };
+		4664F9F91FD3AF560030A171 /* EditImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664F9F71FD3AF560030A171 /* EditImageCollectionViewCell.swift */; };
+		4664F9FA1FD3AF560030A171 /* EditImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9F81FD3AF560030A171 /* EditImageCollectionViewCell.xib */; };
+		4664F9FF1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664F9FD1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift */; };
+		4664FA001FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9FE1FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib */; };
+		4664FA041FD3B09F0030A171 /* title_ls.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA021FD3B09E0030A171 /* title_ls.png */; };
+		4664FA081FD3BE110030A171 /* addButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42501FD3BC77006C9C60 /* addButton.png */; };
+		4664FA091FD3BE110030A171 /* addButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424F1FD3BC77006C9C60 /* addButton@2x.png */; };
+		4664FA0A1FD3BE110030A171 /* map icon_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424E1FD3BB8A006C9C60 /* map icon_off.png */; };
+		4664FA0B1FD3BE110030A171 /* map icon_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42491FD3BB88006C9C60 /* map icon_off@2x.png */; };
+		4664FA0C1FD3BE110030A171 /* map icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424C1FD3BB89006C9C60 /* map icon.png */; };
+		4664FA0D1FD3BE110030A171 /* map icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42481FD3BB87006C9C60 /* map icon@2x.png */; };
+		4664FA0E1FD3BE110030A171 /* timeline icon_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424A1FD3BB88006C9C60 /* timeline icon_on.png */; };
+		4664FA0F1FD3BE110030A171 /* timeline icon_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424D1FD3BB89006C9C60 /* timeline icon_on@2x.png */; };
+		4664FA101FD3BE110030A171 /* timeline icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424B1FD3BB89006C9C60 /* timeline icon.png */; };
+		4664FA111FD3BE110030A171 /* timeline icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */; };
+		4664FA121FD3BE110030A171 /* menuicon_navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */; };
+		4664FA131FD3BE110030A171 /* searchicon_navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */; };
+		4664FA161FD3C21D0030A171 /* ohisama_ls.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA141FD3C1EB0030A171 /* ohisama_ls.png */; };
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
@@ -57,15 +75,20 @@
 		46BCC43F1FD3981E003649D0 /* HomeTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */; };
 		46BCC4411FD39984003649D0 /* HomeMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */; };
 		46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */; };
-		8911C11F1FD3A8BC0027EC50 /* StampPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8911C11E1FD3A8BC0027EC50 /* StampPageViewController.storyboard */; };
-		8911C1221FD3A8D20027EC50 /* HomeTimeLineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8911C1201FD3A8D10027EC50 /* HomeTimeLineCollectionViewCell.xib */; };
-		8911C1231FD3A8D20027EC50 /* HomeTimeLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911C1211FD3A8D10027EC50 /* HomeTimeLineCollectionViewCell.swift */; };
+		58BA42421FD3A9B5006C9C60 /* LucidaGrande.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		4664F9F41FD3A71E0030A171 /* AccountViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountViewController.storyboard; sourceTree = "<group>"; };
+		4664F9F71FD3AF560030A171 /* EditImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		4664F9F81FD3AF560030A171 /* EditImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		4664F9FD1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		4664F9FE1FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditButtonCollectionViewCell.xib; sourceTree = "<group>"; };
+		4664FA011FD3B09E0030A171 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohisama_ls.png; path = /Downloads/ohisama_ls.png; sourceTree = "<absolute>"; };
+		4664FA021FD3B09E0030A171 /* title_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_ls.png; sourceTree = "<group>"; };
+		4664FA141FD3C1EB0030A171 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohisama_ls.png; path = ../../../../Downloads/ohisama_ls.png; sourceTree = "<group>"; };
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,9 +138,19 @@
 		46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTimeLineViewController.swift; sourceTree = "<group>"; };
 		46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeMapViewController.storyboard; sourceTree = "<group>"; };
 		46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTimeLineViewController.storyboard; sourceTree = "<group>"; };
-		8911C11E1FD3A8BC0027EC50 /* StampPageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StampPageViewController.storyboard; sourceTree = "<group>"; };
-		8911C1201FD3A8D10027EC50 /* HomeTimeLineCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTimeLineCollectionViewCell.xib; sourceTree = "<group>"; };
-		8911C1211FD3A8D10027EC50 /* HomeTimeLineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTimeLineCollectionViewCell.swift; sourceTree = "<group>"; };
+		58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = LucidaGrande.ttc; sourceTree = "<group>"; };
+		58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon_navbar.png; sourceTree = "<group>"; };
+		58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchicon_navbar.png; sourceTree = "<group>"; };
+		58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline icon@2x.png"; sourceTree = "<group>"; };
+		58BA42481FD3BB87006C9C60 /* map icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map icon@2x.png"; sourceTree = "<group>"; };
+		58BA42491FD3BB88006C9C60 /* map icon_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map icon_off@2x.png"; sourceTree = "<group>"; };
+		58BA424A1FD3BB88006C9C60 /* timeline icon_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline icon_on.png"; sourceTree = "<group>"; };
+		58BA424B1FD3BB89006C9C60 /* timeline icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline icon.png"; sourceTree = "<group>"; };
+		58BA424C1FD3BB89006C9C60 /* map icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map icon.png"; sourceTree = "<group>"; };
+		58BA424D1FD3BB89006C9C60 /* timeline icon_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline icon_on@2x.png"; sourceTree = "<group>"; };
+		58BA424E1FD3BB8A006C9C60 /* map icon_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map icon_off.png"; sourceTree = "<group>"; };
+		58BA424F1FD3BC77006C9C60 /* addButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addButton@2x.png"; sourceTree = "<group>"; };
+		58BA42501FD3BC77006C9C60 /* addButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addButton.png; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +185,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4664FA051FD3BDCC0030A171 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				4664FA011FD3B09E0030A171 /* ohisama_ls.png */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		46BCC3BB1FD26CA4003649D0 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +200,7 @@
 				46BCC3C51FD26CA4003649D0 /* Products */,
 				273919F38A8BCB4171BB2E66 /* Pods */,
 				2A1B99CC0FA1F99C3D3EB0F4 /* Frameworks */,
+				4664FA051FD3BDCC0030A171 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +215,7 @@
 		46BCC3C61FD26CA4003649D0 /* GirlsHack */ = {
 			isa = PBXGroup;
 			children = (
+				58BA42401FD3A949006C9C60 /* assets */,
 				46BCC42A1FD2ECFE003649D0 /* Model */,
 				46BCC41A1FD2A43E003649D0 /* PopupViewController */,
 				46BCC3F91FD28866003649D0 /* Helper */,
@@ -218,6 +261,10 @@
 			children = (
 				46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */,
 				46BCC3F01FD27C4A003649D0 /* EditViewController.swift */,
+				4664F9F71FD3AF560030A171 /* EditImageCollectionViewCell.swift */,
+				4664F9F81FD3AF560030A171 /* EditImageCollectionViewCell.xib */,
+				4664F9FD1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift */,
+				4664F9FE1FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib */,
 			);
 			path = EditViewController;
 			sourceTree = "<group>";
@@ -294,6 +341,28 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		58BA42401FD3A949006C9C60 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				58BA42501FD3BC77006C9C60 /* addButton.png */,
+				58BA424F1FD3BC77006C9C60 /* addButton@2x.png */,
+				58BA424E1FD3BB8A006C9C60 /* map icon_off.png */,
+				58BA42491FD3BB88006C9C60 /* map icon_off@2x.png */,
+				58BA424C1FD3BB89006C9C60 /* map icon.png */,
+				58BA42481FD3BB87006C9C60 /* map icon@2x.png */,
+				58BA424A1FD3BB88006C9C60 /* timeline icon_on.png */,
+				58BA424D1FD3BB89006C9C60 /* timeline icon_on@2x.png */,
+				58BA424B1FD3BB89006C9C60 /* timeline icon.png */,
+				58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */,
+				58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */,
+				58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */,
+				4664FA141FD3C1EB0030A171 /* ohisama_ls.png */,
+				4664FA021FD3B09E0030A171 /* title_ls.png */,
+				58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,12 +425,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4664FA161FD3C21D0030A171 /* ohisama_ls.png in Resources */,
+				4664FA081FD3BE110030A171 /* addButton.png in Resources */,
+				4664FA091FD3BE110030A171 /* addButton@2x.png in Resources */,
+				4664FA0A1FD3BE110030A171 /* map icon_off.png in Resources */,
+				4664FA0B1FD3BE110030A171 /* map icon_off@2x.png in Resources */,
+				4664FA0C1FD3BE110030A171 /* map icon.png in Resources */,
+				4664FA0D1FD3BE110030A171 /* map icon@2x.png in Resources */,
+				4664FA0E1FD3BE110030A171 /* timeline icon_on.png in Resources */,
+				4664FA0F1FD3BE110030A171 /* timeline icon_on@2x.png in Resources */,
+				4664FA101FD3BE110030A171 /* timeline icon.png in Resources */,
+				4664FA111FD3BE110030A171 /* timeline icon@2x.png in Resources */,
+				4664FA121FD3BE110030A171 /* menuicon_navbar.png in Resources */,
+				4664FA131FD3BE110030A171 /* searchicon_navbar.png in Resources */,
+				4664F9FA1FD3AF560030A171 /* EditImageCollectionViewCell.xib in Resources */,
+				46BCC4311FD2F43E003649D0 /* StampPageViewController.storyboard in Resources */,
 				46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */,
 				46BCC4411FD39984003649D0 /* HomeMapViewController.storyboard in Resources */,
 				46BCC41E1FD2A478003649D0 /* PopupViewController.storyboard in Resources */,
 				4664F9F51FD3A71E0030A171 /* AccountViewController.storyboard in Resources */,
 				46BCC3F41FD27C96003649D0 /* (null) in Resources */,
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
+				4664FA001FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib in Resources */,
 				46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */,
 				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,
@@ -370,8 +455,10 @@
 				46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */,
 				8911C11F1FD3A8BC0027EC50 /* StampPageViewController.storyboard in Resources */,
 				46BCC4291FD2E382003649D0 /* StampCollectionViewController.storyboard in Resources */,
+				58BA42421FD3A9B5006C9C60 /* LucidaGrande.ttc in Resources */,
 				4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */,
 				46BCC43B1FD392E8003649D0 /* SearchResultCollectionViewCell.xib in Resources */,
+				4664FA041FD3B09F0030A171 /* title_ls.png in Resources */,
 				46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */,
 				46BCC4221FD2A935003649D0 /* StampViewController.storyboard in Resources */,
 			);
@@ -476,7 +563,8 @@
 				46BCC4091FD28889003649D0 /* UITableView+Extensions.swift in Sources */,
 				46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */,
 				46BCC4191FD29866003649D0 /* LocalCollection.swift in Sources */,
-				8911C1231FD3A8D20027EC50 /* HomeTimeLineCollectionViewCell.swift in Sources */,
+				4664F9F31FD3A42A0030A171 /* HomeTimeLineCollectionViewCell.swift in Sources */,
+				4664F9FF1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift in Sources */,
 				46BCC42F1FD2F1A0003649D0 /* StampCollectionViewCell.swift in Sources */,
 				46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */,
 				46BCC4331FD2FEE8003649D0 /* FirestoreModel.swift in Sources */,
@@ -487,6 +575,7 @@
 				46BCC43A1FD392E8003649D0 /* SearchResultCollectionViewCell.swift in Sources */,
 				46BCC4261FD2E339003649D0 /* StampPageViewController.swift in Sources */,
 				46BCC4201FD2A929003649D0 /* StampViewController.swift in Sources */,
+				4664F9F91FD3AF560030A171 /* EditImageCollectionViewCell.swift in Sources */,
 				46BCC42C1FD2ED0A003649D0 /* Stamp.swift in Sources */,
 				46BCC4171FD2893D003649D0 /* AccountHelper.swift in Sources */,
 				46BCC4081FD28889003649D0 /* UIApplication+Extensions.swift in Sources */,

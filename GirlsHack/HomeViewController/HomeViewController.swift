@@ -13,6 +13,9 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
 
     static var kAssocKeyWindow: String?
 
+    @IBOutlet weak var accountButton: UIBarButtonItem!
+    @IBOutlet weak var searchButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         
         settings.style.buttonBarBackgroundColor = .white
@@ -29,11 +32,19 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarRightContentInset = 0
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             
+            guard let `self` = self else { return }
             guard changeCurrentIndex == true else { return }
             // 選択されていないボタンのテキスト色
             oldCell?.label.textColor = .black
             // 選択されているボタンのテキスト色
             newCell?.label.textColor = .yellow
+            
+            //レンダリングモードをAlwayOriginalにして画像を読み込む。
+            let image = UIImage(named: "menuicon_navbar")!.withRenderingMode(.alwaysOriginal)
+            let image02 = UIImage(named: "searchicon_navbar")!.withRenderingMode(.alwaysOriginal)
+            
+            self.accountButton.image = image
+            self.searchButton.image = image02
         }
 
         super.viewDidLoad()
@@ -64,24 +75,16 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func touchUpInsideEdit(_ sender: Any) {
+        
+        let editViewController = EditViewController.instantiate()
+        let navi = UINavigationController(rootViewController: editViewController)
+        present(navi, animated: true, completion: nil)
+    }
+    
     @IBAction func tappedStampButton(_ sender: Any) {
 
         performSegue(withIdentifier: "toAccountView", sender: nil)
-//        let newWindow = UIWindow()
-//        newWindow.frame = UIScreen.main.bounds
-//        newWindow.alpha = 0.0
-//        newWindow.rootViewController = StampViewController.instantiate()
-//        newWindow.backgroundColor = UIColor(white: 0, alpha: 0.6)
-//        newWindow.windowLevel = UIWindowLevelNormal + 5
-//        newWindow.makeKeyAndVisible()
-//
-//        objc_setAssociatedObject(UIApplication.shared, &HomeViewController.kAssocKeyWindow, newWindow, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-//
-//        UIView.transition(with: newWindow, duration: 0.2, options: [.transitionCrossDissolve, .curveEaseIn], animations: {
-//
-//            newWindow.alpha = 1.0
-//        }, completion: { finished in})
     }
 
     @IBAction func tappedSearchButton(_ sender: Any) {

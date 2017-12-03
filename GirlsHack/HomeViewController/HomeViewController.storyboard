@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,6 +36,17 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6f-df-3Kq">
                                 <rect key="frame" x="0.0" y="122" width="375" height="545"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVj-Gk-FtG">
+                                <rect key="frame" x="165" y="597" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="GW3-I8-fs0"/>
+                                    <constraint firstAttribute="width" secondItem="hVj-Gk-FtG" secondAttribute="height" multiplier="1:1" id="gbd-Rg-6xs"/>
+                                </constraints>
+                                <state key="normal" image="addButton"/>
+                                <connections>
+                                    <action selector="touchUpInsideEdit:" destination="XNO-4y-OIx" eventType="touchUpInside" id="fYe-gI-TAi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -44,25 +56,29 @@
                             <constraint firstItem="0rY-bK-Bxe" firstAttribute="leading" secondItem="Q4g-Iy-ZPG" secondAttribute="leading" id="blf-m6-xqE"/>
                             <constraint firstItem="q6f-df-3Kq" firstAttribute="bottom" secondItem="Q4g-Iy-ZPG" secondAttribute="bottom" id="iRI-h7-lHe"/>
                             <constraint firstItem="0rY-bK-Bxe" firstAttribute="top" secondItem="Q4g-Iy-ZPG" secondAttribute="top" id="jc4-iN-zuW"/>
+                            <constraint firstItem="hVj-Gk-FtG" firstAttribute="centerX" secondItem="QXw-yu-HtE" secondAttribute="centerX" id="pbC-k3-9oB"/>
                             <constraint firstItem="q6f-df-3Kq" firstAttribute="top" secondItem="0rY-bK-Bxe" secondAttribute="bottom" constant="8" id="yWd-5e-iXy"/>
+                            <constraint firstItem="Q4g-Iy-ZPG" firstAttribute="bottom" secondItem="hVj-Gk-FtG" secondAttribute="bottom" constant="25" id="yob-kw-or6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q4g-Iy-ZPG"/>
                     </view>
                     <navigationItem key="navigationItem" id="j3w-wI-Xvq">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="2qj-nC-vf9">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menuicon_navbar" id="2qj-nC-vf9">
                             <connections>
                                 <action selector="tappedStampButton:" destination="XNO-4y-OIx" id="VpK-8G-zaC"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="o5K-Xj-SqJ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="searchicon_navbar" id="o5K-Xj-SqJ">
                             <connections>
                                 <action selector="tappedSearchButton:" destination="XNO-4y-OIx" id="Hhv-lN-kVz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="accountButton" destination="2qj-nC-vf9" id="5fs-8H-IcW"/>
                         <outlet property="buttonBarView" destination="0rY-bK-Bxe" id="JkA-bU-Mk4"/>
                         <outlet property="containerView" destination="q6f-df-3Kq" id="fAe-JM-IOH"/>
+                        <outlet property="searchButton" destination="o5K-Xj-SqJ" id="xr3-xm-bhM"/>
                         <segue destination="cyY-qd-1Id" kind="show" identifier="toSearchView" id="zCU-Yu-JzZ"/>
                         <segue destination="D4j-ND-a6p" kind="show" identifier="toAccountView" id="baC-Q3-fZy"/>
                     </connections>
@@ -71,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="280.80000000000001" y="113.79310344827587"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--AccountViewController-->
         <scene sceneID="GZ8-jE-4jY">
             <objects>
-                <viewControllerPlaceholder id="D4j-ND-a6p" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AccountViewController" id="D4j-ND-a6p" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1J3-ti-jRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="889" y="27"/>
@@ -106,4 +122,9 @@
             <point key="canvasLocation" x="-617" y="114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="addButton" width="45" height="45"/>
+        <image name="menuicon_navbar" width="36" height="36"/>
+        <image name="searchicon_navbar" width="36" height="36"/>
+    </resources>
 </document>

@@ -15,6 +15,7 @@ extension UIColor {
     struct MusicApp {
         
         static var white: UIColor { return UIColor(hex: "#FFFFFF") }
+        static var background: UIColor { return UIColor(hex: "#FAFAFA") }
         static var magenta: UIColor { return UIColor(hex: "#FF005F") }
     }
 }

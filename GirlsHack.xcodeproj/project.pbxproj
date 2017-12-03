@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */; };
-		4664F9F31FD3A42A0030A171 /* HomeTimeLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664F9F21FD3A4290030A171 /* HomeTimeLineCollectionViewCell.swift */; };
 		4664F9F51FD3A71E0030A171 /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9F41FD3A71E0030A171 /* AccountViewController.storyboard */; };
 		4664F9F91FD3AF560030A171 /* EditImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664F9F71FD3AF560030A171 /* EditImageCollectionViewCell.swift */; };
 		4664F9FA1FD3AF560030A171 /* EditImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9F81FD3AF560030A171 /* EditImageCollectionViewCell.xib */; };
@@ -67,7 +66,6 @@
 		46BCC42C1FD2ED0A003649D0 /* Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC42B1FD2ED0A003649D0 /* Stamp.swift */; };
 		46BCC42F1FD2F1A0003649D0 /* StampCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */; };
 		46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC42E1FD2F1A0003649D0 /* StampCollectionViewCell.xib */; };
-		46BCC4311FD2F43E003649D0 /* StampPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4271FD2E351003649D0 /* StampPageViewController.storyboard */; };
 		46BCC4331FD2FEE8003649D0 /* FirestoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4321FD2FEE8003649D0 /* FirestoreModel.swift */; };
 		46BCC4351FD38D8B003649D0 /* VincentyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4341FD38D8B003649D0 /* VincentyHelper.swift */; };
 		46BCC4371FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4361FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift */; };
@@ -83,8 +81,6 @@
 
 /* Begin PBXFileReference section */
 		4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
-		4664F9F11FD3A4290030A171 /* HomeTimeLineCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeTimeLineCollectionViewCell.xib; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/HomeViewController/HomeTimeLineCollectionViewCell.xib; sourceTree = "<absolute>"; };
-		4664F9F21FD3A4290030A171 /* HomeTimeLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTimeLineCollectionViewCell.swift; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/HomeViewController/HomeTimeLineCollectionViewCell.swift; sourceTree = "<absolute>"; };
 		4664F9F41FD3A71E0030A171 /* AccountViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountViewController.storyboard; sourceTree = "<group>"; };
 		4664F9F71FD3AF560030A171 /* EditImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4664F9F81FD3AF560030A171 /* EditImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditImageCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -129,7 +125,6 @@
 		46BCC4211FD2A935003649D0 /* StampViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StampViewController.storyboard; sourceTree = "<group>"; };
 		46BCC4231FD2AB73003649D0 /* StampCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCollectionViewController.swift; sourceTree = "<group>"; };
 		46BCC4251FD2E339003649D0 /* StampPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampPageViewController.swift; sourceTree = "<group>"; };
-		46BCC4271FD2E351003649D0 /* StampPageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = StampPageViewController.storyboard; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/HomeViewController/StampPageViewController.storyboard; sourceTree = "<absolute>"; };
 		46BCC4281FD2E382003649D0 /* StampCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StampCollectionViewController.storyboard; sourceTree = "<group>"; };
 		46BCC42B1FD2ED0A003649D0 /* Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stamp.swift; sourceTree = "<group>"; };
 		46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -241,8 +236,8 @@
 		46BCC3DC1FD27B96003649D0 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4664F9F21FD3A4290030A171 /* HomeTimeLineCollectionViewCell.swift */,
-				4664F9F11FD3A4290030A171 /* HomeTimeLineCollectionViewCell.xib */,
+				8911C1211FD3A8D10027EC50 /* HomeTimeLineCollectionViewCell.swift */,
+				8911C1201FD3A8D10027EC50 /* HomeTimeLineCollectionViewCell.xib */,
 				46BCC43C1FD3981E003649D0 /* HomeMapViewController.swift */,
 				46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */,
 				46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */,
@@ -252,7 +247,7 @@
 				46BCC41F1FD2A929003649D0 /* StampViewController.swift */,
 				46BCC4211FD2A935003649D0 /* StampViewController.storyboard */,
 				46BCC4251FD2E339003649D0 /* StampPageViewController.swift */,
-				46BCC4271FD2E351003649D0 /* StampPageViewController.storyboard */,
+				8911C11E1FD3A8BC0027EC50 /* StampPageViewController.storyboard */,
 				46BCC4231FD2AB73003649D0 /* StampCollectionViewController.swift */,
 				46BCC4281FD2E382003649D0 /* StampCollectionViewController.storyboard */,
 				46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */,
@@ -456,7 +451,9 @@
 				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,
 				46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */,
+				8911C1221FD3A8D20027EC50 /* HomeTimeLineCollectionViewCell.xib in Resources */,
 				46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */,
+				8911C11F1FD3A8BC0027EC50 /* StampPageViewController.storyboard in Resources */,
 				46BCC4291FD2E382003649D0 /* StampCollectionViewController.storyboard in Resources */,
 				58BA42421FD3A9B5006C9C60 /* LucidaGrande.ttc in Resources */,
 				4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */,

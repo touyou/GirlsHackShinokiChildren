@@ -81,16 +81,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TimeLine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDx-oY-2Vb">
-                                <rect key="frame" x="16" y="162" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D9l-Jm-RFb">
+                                <rect key="frame" x="16" y="64" width="343" height="583"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Hbo-l6-Baw"/>
+                                    <constraint firstAttribute="height" constant="583" id="HmX-HG-PeK"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CJF-z9-VNJ">
+                                    <size key="itemSize" width="335" height="179"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CafeCell" reuseIdentifier="CafeCell" id="e3t-3y-Jm3" customClass="HomeTimeLineCollectionViewCell" customModule="GirlsHack" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="0.0" width="335" height="179"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WF5-v2-rz1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="179"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="homeTimeLineImageView" destination="WF5-v2-rz1" id="JKV-F9-hay"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="A2o-JZ-Lqn" id="K5C-GU-MhR"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.6549019814" alpha="0.40999999999999998" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="D9l-Jm-RFb" firstAttribute="leading" secondItem="hJA-7k-0Yv" secondAttribute="leading" constant="16" id="0Ck-ri-Fjw"/>
+                            <constraint firstItem="hJA-7k-0Yv" firstAttribute="trailing" secondItem="D9l-Jm-RFb" secondAttribute="trailing" constant="16" id="3oi-QZ-QHw"/>
+                            <constraint firstItem="D9l-Jm-RFb" firstAttribute="top" secondItem="hJA-7k-0Yv" secondAttribute="top" constant="44" id="AqH-pq-KlO"/>
+                            <constraint firstItem="hJA-7k-0Yv" firstAttribute="bottom" secondItem="D9l-Jm-RFb" secondAttribute="bottom" constant="20" id="yx9-38-mJ4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hJA-7k-0Yv"/>
                     </view>
                 </viewController>

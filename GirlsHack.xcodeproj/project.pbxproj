@@ -36,6 +36,7 @@
 		46BCC4141FD288E9003649D0 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4101FD288E8003649D0 /* Reusable.swift */; };
 		46BCC4151FD288E9003649D0 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4111FD288E9003649D0 /* NibLoadable.swift */; };
 		46BCC4171FD2893D003649D0 /* AccountHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4161FD2893D003649D0 /* AccountHelper.swift */; };
+		8911C11B1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911C11A1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift */; };
 		89C6C68C1FD2A8E200057CAD /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C6C68B1FD2A8E100057CAD /* AccountViewController.storyboard */; };
 		89C6C68E1FD2B12000057CAD /* HomeTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C6C68D1FD2B12000057CAD /* HomeTimeLineViewController.swift */; };
 		89C6C6921FD2B19F00057CAD /* HomeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C6C6911FD2B19F00057CAD /* HomeMapViewController.swift */; };
@@ -74,6 +75,7 @@
 		46BCC4101FD288E8003649D0 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		46BCC4111FD288E9003649D0 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		46BCC4161FD2893D003649D0 /* AccountHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHelper.swift; sourceTree = "<group>"; };
+		8911C11A1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTimeLineCollectionViewCell.swift; sourceTree = "<group>"; };
 		89C6C68B1FD2A8E100057CAD /* AccountViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountViewController.storyboard; sourceTree = "<group>"; };
 		89C6C68D1FD2B12000057CAD /* HomeTimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTimeLineViewController.swift; sourceTree = "<group>"; };
 		89C6C6911FD2B19F00057CAD /* HomeMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				89C6C68D1FD2B12000057CAD /* HomeTimeLineViewController.swift */,
 				46BCC3F21FD27C53003649D0 /* HomeViewController.swift */,
 				89C6C6911FD2B19F00057CAD /* HomeMapViewController.swift */,
+				8911C11A1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				89C6C6921FD2B19F00057CAD /* HomeMapViewController.swift in Sources */,
 				46BCC4121FD288E9003649D0 /* StoryboardInstantiable.swift in Sources */,
 				46BCC4061FD28889003649D0 /* UIAlertController.swift in Sources */,
+				8911C11B1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift in Sources */,
 				46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */,
 				46BCC4131FD288E9003649D0 /* NibInstantiable.swift in Sources */,
 				46BCC3EB1FD27C2F003649D0 /* AccountViewController.swift in Sources */,

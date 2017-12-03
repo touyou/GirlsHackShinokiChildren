@@ -14,5 +14,6 @@ target 'GirlsHack' do
   pod 'ZFRippleButton'
   pod 'XLPagerTabStrip', '~> 8.0'
   pod 'RealmSwift'
+  pod 'Kingfisher'
 
 end

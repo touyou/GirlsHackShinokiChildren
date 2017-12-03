@@ -64,11 +64,20 @@
                         <outlet property="buttonBarView" destination="0rY-bK-Bxe" id="JkA-bU-Mk4"/>
                         <outlet property="containerView" destination="q6f-df-3Kq" id="fAe-JM-IOH"/>
                         <segue destination="cyY-qd-1Id" kind="show" identifier="toSearchView" id="zCU-Yu-JzZ"/>
+                        <segue destination="D4j-ND-a6p" kind="show" identifier="toAccountView" id="baC-Q3-fZy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOd-4l-js2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="280.80000000000001" y="113.79310344827587"/>
+        </scene>
+        <!--AccountViewController-->
+        <scene sceneID="GZ8-jE-4jY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AccountViewController" id="D4j-ND-a6p" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1J3-ti-jRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="27"/>
         </scene>
         <!--SearchViewController-->
         <scene sceneID="g62-hQ-1ex">

@@ -45,7 +45,7 @@ extension Post: DocumentSerializable {
     }
 }
 
-struct User {
+struct UserInfo {
     
     var name: String
     var iconURL: String
@@ -59,7 +59,7 @@ struct User {
     }
 }
 
-extension User: DocumentSerializable {
+extension UserInfo: DocumentSerializable {
     
     init?(dictionary: [String : Any]) {
         

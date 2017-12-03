@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gbx-Wo-HAz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Account Contents View Controller-->
+        <scene sceneID="ViT-1k-i0b">
+            <objects>
+                <viewController id="gbx-Wo-HAz" customClass="AccountContentsViewController" customModule="GirlsHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Xy-cG-uCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yFz-l9-hhk" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hYE-W3-JZI"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xNq-Pg-ate">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ywc-Px-AL1">
+                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yFz-l9-hhk" firstAttribute="leading" secondItem="rRF-fl-0Of" secondAttribute="leading" id="FPl-Es-OZi"/>
+                            <constraint firstItem="Ywc-Px-AL1" firstAttribute="top" secondItem="yFz-l9-hhk" secondAttribute="bottom" constant="8" id="KYI-Cw-xd5"/>
+                            <constraint firstItem="Ywc-Px-AL1" firstAttribute="trailing" secondItem="rRF-fl-0Of" secondAttribute="trailing" id="bfp-Yq-6du"/>
+                            <constraint firstItem="Ywc-Px-AL1" firstAttribute="leading" secondItem="rRF-fl-0Of" secondAttribute="leading" id="dCd-26-eqK"/>
+                            <constraint firstItem="yFz-l9-hhk" firstAttribute="top" secondItem="7Xy-cG-uCZ" secondAttribute="top" id="eHU-OJ-L7x"/>
+                            <constraint firstItem="yFz-l9-hhk" firstAttribute="trailing" secondItem="rRF-fl-0Of" secondAttribute="trailing" id="hWe-Mx-Y2C"/>
+                            <constraint firstItem="Ywc-Px-AL1" firstAttribute="bottom" secondItem="rRF-fl-0Of" secondAttribute="bottom" id="mRE-U3-QHM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rRF-fl-0Of"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBarView" destination="yFz-l9-hhk" id="uIv-Og-bwp"/>
+                        <outlet property="containerView" destination="Ywc-Px-AL1" id="Dgf-1S-Bi7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3h-mz-pNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="86.806596701649184"/>
+        </scene>
+    </scenes>
+</document>

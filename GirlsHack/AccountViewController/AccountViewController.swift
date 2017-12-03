@@ -9,7 +9,25 @@
 import UIKit
 
 class AccountViewController: UIViewController {
-
+    
+    @IBOutlet weak var iconImageView: UIImageView! {
+        
+        didSet {
+            
+            iconImageView.cornerRadius = iconImageView.bounds.width / 2
+        }
+    }
+    @IBOutlet weak var containerView: UIView! {
+        
+        didSet {
+            
+            let viewController = AccountContentsViewController.instantiate()
+            viewController.view.frame = containerView.frame
+            containerView.addSubview(viewController.view)
+            addChildViewController(viewController)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

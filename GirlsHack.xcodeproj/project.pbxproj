@@ -30,6 +30,10 @@
 		4664FA1B1FD3C5170030A171 /* HomeTimeLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664FA181FD3C5160030A171 /* HomeTimeLineCollectionViewCell.swift */; };
 		4664FA1C1FD3C5170030A171 /* StampPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA191FD3C5160030A171 /* StampPageViewController.storyboard */; };
 		4664FA1E1FD3C53A0030A171 /* ohisama_ls.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA1D1FD3C53A0030A171 /* ohisama_ls.png */; };
+		4664FA201FD3CEDB0030A171 /* AccountContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664FA1F1FD3CEDB0030A171 /* AccountContentsViewController.swift */; };
+		4664FA221FD3CEE70030A171 /* AccountContentsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA211FD3CEE70030A171 /* AccountContentsViewController.storyboard */; };
+		4664FA241FD3D0820030A171 /* AccountTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664FA231FD3D0820030A171 /* AccountTimelineViewController.swift */; };
+		4664FA261FD3D0980030A171 /* AccountTimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA251FD3D0980030A171 /* AccountTimelineViewController.storyboard */; };
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
@@ -95,6 +99,10 @@
 		4664FA181FD3C5160030A171 /* HomeTimeLineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTimeLineCollectionViewCell.swift; sourceTree = "<group>"; };
 		4664FA191FD3C5160030A171 /* StampPageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StampPageViewController.storyboard; sourceTree = "<group>"; };
 		4664FA1D1FD3C53A0030A171 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ohisama_ls.png; sourceTree = "<group>"; };
+		4664FA1F1FD3CEDB0030A171 /* AccountContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountContentsViewController.swift; sourceTree = "<group>"; };
+		4664FA211FD3CEE70030A171 /* AccountContentsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountContentsViewController.storyboard; sourceTree = "<group>"; };
+		4664FA231FD3D0820030A171 /* AccountTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTimelineViewController.swift; sourceTree = "<group>"; };
+		4664FA251FD3D0980030A171 /* AccountTimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountTimelineViewController.storyboard; sourceTree = "<group>"; };
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -300,6 +308,10 @@
 			children = (
 				46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */,
 				4664F9F41FD3A71E0030A171 /* AccountViewController.storyboard */,
+				4664FA1F1FD3CEDB0030A171 /* AccountContentsViewController.swift */,
+				4664FA211FD3CEE70030A171 /* AccountContentsViewController.storyboard */,
+				4664FA231FD3D0820030A171 /* AccountTimelineViewController.swift */,
+				4664FA251FD3D0980030A171 /* AccountTimelineViewController.storyboard */,
 			);
 			path = AccountViewController;
 			sourceTree = "<group>";
@@ -432,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4664FA081FD3BE110030A171 /* addButton.png in Resources */,
+				4664FA261FD3D0980030A171 /* AccountTimelineViewController.storyboard in Resources */,
 				4664FA1A1FD3C5170030A171 /* HomeTimeLineCollectionViewCell.xib in Resources */,
 				4664FA091FD3BE110030A171 /* addButton@2x.png in Resources */,
 				4664FA0A1FD3BE110030A171 /* map icon_off.png in Resources */,
@@ -444,6 +457,7 @@
 				4664FA111FD3BE110030A171 /* timeline icon@2x.png in Resources */,
 				4664FA121FD3BE110030A171 /* menuicon_navbar.png in Resources */,
 				4664FA131FD3BE110030A171 /* searchicon_navbar.png in Resources */,
+				4664FA221FD3CEE70030A171 /* AccountContentsViewController.storyboard in Resources */,
 				4664F9FA1FD3AF560030A171 /* EditImageCollectionViewCell.xib in Resources */,
 				46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */,
 				46BCC4411FD39984003649D0 /* HomeMapViewController.storyboard in Resources */,
@@ -597,8 +611,10 @@
 				46BCC3F11FD27C4A003649D0 /* EditViewController.swift in Sources */,
 				46BCC40A1FD28889003649D0 /* UIView+Extensions.swift in Sources */,
 				46BCC4041FD28889003649D0 /* UIColor+Extensions.swift in Sources */,
+				4664FA201FD3CEDB0030A171 /* AccountContentsViewController.swift in Sources */,
 				46BCC40B1FD28889003649D0 /* UIImage+Extensions.swift in Sources */,
 				46BCC41C1FD2A46C003649D0 /* PopupViewController.swift in Sources */,
+				4664FA241FD3D0820030A171 /* AccountTimelineViewController.swift in Sources */,
 				46BCC4351FD38D8B003649D0 /* VincentyHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

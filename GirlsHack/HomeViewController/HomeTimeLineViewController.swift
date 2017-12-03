@@ -15,15 +15,13 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
     @IBOutlet weak var collectionView: UICollectionView! {
 
         didSet {
-
             collectionView.dataSource = self
             collectionView.delegate = self
             collectionView.register(HomeTimeLineCollectionViewCell.self)
         }
     }
     // タブのタイトルを設定
-    var itemInfo: IndicatorInfo = "TimeLine"
-
+    var itemInfo = IndicatorInfo(image: UIImage(named:""))
     //データの個数を返すメソッド
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
@@ -50,8 +48,10 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell: HomeTimeLineCollectionViewCell = collectionView.cellForItem(at: indexPath) as! HomeTimeLineCollectionViewCell
 
-        //セルの中のラベルの値を変更する。
-        cell.backgroundColor = .red
+        //詳細ページへ遷移
+        let actView = ActivityViewController.instantiate()
+        UIApplication.shared.topPresentedNavigationController?.pushViewController(actView, animated: true)
+
     }
 
     override func viewDidLoad() {

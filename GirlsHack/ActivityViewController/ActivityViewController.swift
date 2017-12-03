@@ -33,3 +33,5 @@ class ActivityViewController: UIViewController {
     */
 
 }
+
+extension ActivityViewController: StoryboardInstantiable {}

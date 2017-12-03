@@ -34,6 +34,16 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
             oldCell?.label.textColor = .black
             // 選択されているボタンのテキスト色
             newCell?.label.textColor = .yellow
+            
+            //レンダリングモードをAlwayOriginalにして画像を読み込む。
+            let image = UIImage(named: "menuicon_navbar.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            let image02 = UIImage(named: "searchicon_navbar.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            
+            //ボタンを作成する。
+            let button = UIBarButtonItem(image:image , style: UIBarButtonItemStyle.Plain, target:nil, action: nil)
+            
+            //ボタンをツールバーに設定する。
+            testToolbar.items = [button]
         }
 
         super.viewDidLoad()

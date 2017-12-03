@@ -120,6 +120,18 @@
 		46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTimeLineViewController.storyboard; sourceTree = "<group>"; };
 		58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = LucidaGrande.ttc; sourceTree = "<group>"; };
 		58BA42441FD3AB79006C9C60 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ohisama_ls.png; sourceTree = "<group>"; };
+		58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon_navbar.png; sourceTree = "<group>"; };
+		58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchicon_navbar.png; sourceTree = "<group>"; };
+		58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline icon@2x.png"; sourceTree = "<group>"; };
+		58BA42481FD3BB87006C9C60 /* map icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map icon@2x.png"; sourceTree = "<group>"; };
+		58BA42491FD3BB88006C9C60 /* map icon_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map icon_off@2x.png"; sourceTree = "<group>"; };
+		58BA424A1FD3BB88006C9C60 /* timeline icon_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline icon_on.png"; sourceTree = "<group>"; };
+		58BA424B1FD3BB89006C9C60 /* timeline icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline icon.png"; sourceTree = "<group>"; };
+		58BA424C1FD3BB89006C9C60 /* map icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map icon.png"; sourceTree = "<group>"; };
+		58BA424D1FD3BB89006C9C60 /* timeline icon_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline icon_on@2x.png"; sourceTree = "<group>"; };
+		58BA424E1FD3BB8A006C9C60 /* map icon_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map icon_off.png"; sourceTree = "<group>"; };
+		58BA424F1FD3BC77006C9C60 /* addButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addButton@2x.png"; sourceTree = "<group>"; };
+		58BA42501FD3BC77006C9C60 /* addButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addButton.png; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -300,6 +312,18 @@
 		58BA42401FD3A949006C9C60 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				58BA42501FD3BC77006C9C60 /* addButton.png */,
+				58BA424F1FD3BC77006C9C60 /* addButton@2x.png */,
+				58BA424E1FD3BB8A006C9C60 /* map icon_off.png */,
+				58BA42491FD3BB88006C9C60 /* map icon_off@2x.png */,
+				58BA424C1FD3BB89006C9C60 /* map icon.png */,
+				58BA42481FD3BB87006C9C60 /* map icon@2x.png */,
+				58BA424A1FD3BB88006C9C60 /* timeline icon_on.png */,
+				58BA424D1FD3BB89006C9C60 /* timeline icon_on@2x.png */,
+				58BA424B1FD3BB89006C9C60 /* timeline icon.png */,
+				58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */,
+				58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */,
+				58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */,
 				58BA42441FD3AB79006C9C60 /* ohisama_ls.png */,
 				58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */,
 			);

@@ -62,7 +62,6 @@
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46BCC3D11FD26CA4003649D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46BCC3D31FD26CA4003649D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AccountViewController.storyboard; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/AccountViewController/AccountViewController.storyboard; sourceTree = "<absolute>"; };
 		46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditViewController.storyboard; sourceTree = "<group>"; };
 		46BCC3E41FD27BE1003649D0 /* ActivityViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActivityViewController.storyboard; sourceTree = "<group>"; };
 		46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
@@ -181,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				46BCC3E81FD27BEC003649D0 /* HomeViewController.storyboard */,
+				89C6C68D1FD2B12000057CAD /* HomeTimeLineViewController.swift */,
 				46BCC3F21FD27C53003649D0 /* HomeViewController.swift */,
 				46BCC41F1FD2A929003649D0 /* StampViewController.swift */,
 				46BCC4211FD2A935003649D0 /* StampViewController.storyboard */,
@@ -226,7 +226,7 @@
 		46BCC3E01FD27BC1003649D0 /* AccountViewController */ = {
 			isa = PBXGroup;
 			children = (
-				46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */,
+				89C6C68B1FD2A8E100057CAD /* AccountViewController.storyboard */,
 				46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */,
 			);
 			path = AccountViewController;
@@ -342,6 +342,7 @@
 				46BCC41E1FD2A478003649D0 /* PopupViewController.storyboard in Resources */,
 				46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */,
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
+				89C6C68C1FD2A8E200057CAD /* AccountViewController.storyboard in Resources */,
 				46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */,
 				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
 				46BCC3E91FD27BEC003649D0 /* HomeViewController.storyboard in Resources */,
@@ -465,7 +466,9 @@
 				46BCC42C1FD2ED0A003649D0 /* Stamp.swift in Sources */,
 				46BCC4171FD2893D003649D0 /* AccountHelper.swift in Sources */,
 				46BCC4081FD28889003649D0 /* UIApplication+Extensions.swift in Sources */,
+				89C6C68E1FD2B12000057CAD /* HomeTimeLineViewController.swift in Sources */,
 				46BCC40C1FD28889003649D0 /* UITabBarController+Extensions.swift in Sources */,
+				89C6C6921FD2B19F00057CAD /* HomeMapViewController.swift in Sources */,
 				46BCC4121FD288E9003649D0 /* StoryboardInstantiable.swift in Sources */,
 				46BCC4061FD28889003649D0 /* UIAlertController.swift in Sources */,
 				46BCC4371FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
@@ -610,7 +613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4S4333JDW;
+				DEVELOPMENT_TEAM = QEX6ZN4B66;
 				INFOPLIST_FILE = GirlsHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.GirlsHack;
@@ -626,7 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4S4333JDW;
+				DEVELOPMENT_TEAM = QEX6ZN4B66;
 				INFOPLIST_FILE = GirlsHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.GirlsHack;

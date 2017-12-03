@@ -26,7 +26,10 @@
 		4664FA111FD3BE110030A171 /* timeline icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */; };
 		4664FA121FD3BE110030A171 /* menuicon_navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */; };
 		4664FA131FD3BE110030A171 /* searchicon_navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */; };
-		4664FA161FD3C21D0030A171 /* ohisama_ls.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA141FD3C1EB0030A171 /* ohisama_ls.png */; };
+		4664FA1A1FD3C5170030A171 /* HomeTimeLineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA171FD3C5160030A171 /* HomeTimeLineCollectionViewCell.xib */; };
+		4664FA1B1FD3C5170030A171 /* HomeTimeLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664FA181FD3C5160030A171 /* HomeTimeLineCollectionViewCell.swift */; };
+		4664FA1C1FD3C5170030A171 /* StampPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA191FD3C5160030A171 /* StampPageViewController.storyboard */; };
+		4664FA1E1FD3C53A0030A171 /* ohisama_ls.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA1D1FD3C53A0030A171 /* ohisama_ls.png */; };
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
@@ -88,7 +91,10 @@
 		4664F9FE1FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 		4664FA011FD3B09E0030A171 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohisama_ls.png; path = /Downloads/ohisama_ls.png; sourceTree = "<absolute>"; };
 		4664FA021FD3B09E0030A171 /* title_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_ls.png; sourceTree = "<group>"; };
-		4664FA141FD3C1EB0030A171 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohisama_ls.png; path = ../../../../Downloads/ohisama_ls.png; sourceTree = "<group>"; };
+		4664FA171FD3C5160030A171 /* HomeTimeLineCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTimeLineCollectionViewCell.xib; sourceTree = "<group>"; };
+		4664FA181FD3C5160030A171 /* HomeTimeLineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTimeLineCollectionViewCell.swift; sourceTree = "<group>"; };
+		4664FA191FD3C5160030A171 /* StampPageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StampPageViewController.storyboard; sourceTree = "<group>"; };
+		4664FA1D1FD3C53A0030A171 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ohisama_ls.png; sourceTree = "<group>"; };
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -236,8 +242,9 @@
 		46BCC3DC1FD27B96003649D0 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8911C1211FD3A8D10027EC50 /* HomeTimeLineCollectionViewCell.swift */,
-				8911C1201FD3A8D10027EC50 /* HomeTimeLineCollectionViewCell.xib */,
+				4664FA181FD3C5160030A171 /* HomeTimeLineCollectionViewCell.swift */,
+				4664FA171FD3C5160030A171 /* HomeTimeLineCollectionViewCell.xib */,
+				4664FA191FD3C5160030A171 /* StampPageViewController.storyboard */,
 				46BCC43C1FD3981E003649D0 /* HomeMapViewController.swift */,
 				46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */,
 				46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */,
@@ -247,7 +254,6 @@
 				46BCC41F1FD2A929003649D0 /* StampViewController.swift */,
 				46BCC4211FD2A935003649D0 /* StampViewController.storyboard */,
 				46BCC4251FD2E339003649D0 /* StampPageViewController.swift */,
-				8911C11E1FD3A8BC0027EC50 /* StampPageViewController.storyboard */,
 				46BCC4231FD2AB73003649D0 /* StampCollectionViewController.swift */,
 				46BCC4281FD2E382003649D0 /* StampCollectionViewController.storyboard */,
 				46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */,
@@ -344,6 +350,7 @@
 		58BA42401FD3A949006C9C60 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				4664FA1D1FD3C53A0030A171 /* ohisama_ls.png */,
 				58BA42501FD3BC77006C9C60 /* addButton.png */,
 				58BA424F1FD3BC77006C9C60 /* addButton@2x.png */,
 				58BA424E1FD3BB8A006C9C60 /* map icon_off.png */,
@@ -356,7 +363,6 @@
 				58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */,
 				58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */,
 				58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */,
-				4664FA141FD3C1EB0030A171 /* ohisama_ls.png */,
 				4664FA021FD3B09E0030A171 /* title_ls.png */,
 				58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */,
 			);
@@ -425,8 +431,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4664FA161FD3C21D0030A171 /* ohisama_ls.png in Resources */,
 				4664FA081FD3BE110030A171 /* addButton.png in Resources */,
+				4664FA1A1FD3C5170030A171 /* HomeTimeLineCollectionViewCell.xib in Resources */,
 				4664FA091FD3BE110030A171 /* addButton@2x.png in Resources */,
 				4664FA0A1FD3BE110030A171 /* map icon_off.png in Resources */,
 				4664FA0B1FD3BE110030A171 /* map icon_off@2x.png in Resources */,
@@ -439,7 +445,6 @@
 				4664FA121FD3BE110030A171 /* menuicon_navbar.png in Resources */,
 				4664FA131FD3BE110030A171 /* searchicon_navbar.png in Resources */,
 				4664F9FA1FD3AF560030A171 /* EditImageCollectionViewCell.xib in Resources */,
-				46BCC4311FD2F43E003649D0 /* StampPageViewController.storyboard in Resources */,
 				46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */,
 				46BCC4411FD39984003649D0 /* HomeMapViewController.storyboard in Resources */,
 				46BCC41E1FD2A478003649D0 /* PopupViewController.storyboard in Resources */,
@@ -451,14 +456,14 @@
 				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,
 				46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */,
-				8911C1221FD3A8D20027EC50 /* HomeTimeLineCollectionViewCell.xib in Resources */,
 				46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */,
-				8911C11F1FD3A8BC0027EC50 /* StampPageViewController.storyboard in Resources */,
 				46BCC4291FD2E382003649D0 /* StampCollectionViewController.storyboard in Resources */,
 				58BA42421FD3A9B5006C9C60 /* LucidaGrande.ttc in Resources */,
 				4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */,
 				46BCC43B1FD392E8003649D0 /* SearchResultCollectionViewCell.xib in Resources */,
+				4664FA1C1FD3C5170030A171 /* StampPageViewController.storyboard in Resources */,
 				4664FA041FD3B09F0030A171 /* title_ls.png in Resources */,
+				4664FA1E1FD3C53A0030A171 /* ohisama_ls.png in Resources */,
 				46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */,
 				46BCC4221FD2A935003649D0 /* StampViewController.storyboard in Resources */,
 			);
@@ -563,8 +568,8 @@
 				46BCC4091FD28889003649D0 /* UITableView+Extensions.swift in Sources */,
 				46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */,
 				46BCC4191FD29866003649D0 /* LocalCollection.swift in Sources */,
-				4664F9F31FD3A42A0030A171 /* HomeTimeLineCollectionViewCell.swift in Sources */,
 				4664F9FF1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift in Sources */,
+				4664FA1B1FD3C5170030A171 /* HomeTimeLineCollectionViewCell.swift in Sources */,
 				46BCC42F1FD2F1A0003649D0 /* StampCollectionViewCell.swift in Sources */,
 				46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */,
 				46BCC4331FD2FEE8003649D0 /* FirestoreModel.swift in Sources */,

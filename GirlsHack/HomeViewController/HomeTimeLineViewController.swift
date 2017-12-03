@@ -21,7 +21,7 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
         }
     }
     // タブのタイトルを設定
-    var itemInfo = IndicatorInfo(image: UIImage(named:""))
+    var itemInfo = IndicatorInfo(image: <#T##UIImage?#>, highlightedImage: <#T##UIImage?#>)
     //データの個数を返すメソッド
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {

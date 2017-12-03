@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */; };
 		4664F9F31FD3A42A0030A171 /* HomeTimeLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664F9F21FD3A4290030A171 /* HomeTimeLineCollectionViewCell.swift */; };
+		4664F9F51FD3A71E0030A171 /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9F41FD3A71E0030A171 /* AccountViewController.storyboard */; };
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
@@ -65,6 +66,7 @@
 		4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		4664F9F11FD3A4290030A171 /* HomeTimeLineCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeTimeLineCollectionViewCell.xib; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/HomeViewController/HomeTimeLineCollectionViewCell.xib; sourceTree = "<absolute>"; };
 		4664F9F21FD3A4290030A171 /* HomeTimeLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTimeLineCollectionViewCell.swift; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/HomeViewController/HomeTimeLineCollectionViewCell.swift; sourceTree = "<absolute>"; };
+		4664F9F41FD3A71E0030A171 /* AccountViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountViewController.storyboard; sourceTree = "<group>"; };
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */,
+				4664F9F41FD3A71E0030A171 /* AccountViewController.storyboard */,
 			);
 			path = AccountViewController;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */,
 				46BCC4411FD39984003649D0 /* HomeMapViewController.storyboard in Resources */,
 				46BCC41E1FD2A478003649D0 /* PopupViewController.storyboard in Resources */,
+				4664F9F51FD3A71E0030A171 /* AccountViewController.storyboard in Resources */,
 				46BCC3F41FD27C96003649D0 /* (null) in Resources */,
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
 				46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */,

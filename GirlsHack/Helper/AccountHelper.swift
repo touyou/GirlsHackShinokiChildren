@@ -184,10 +184,6 @@ class AccountHelper: NSObject {
     /// Filter by distace [m]
     internal func filterDistance(by dist: Double, for collection: String) -> Query {
         
-        // TODO: LocationManagerを入れる
-        // TODO: そこから0, 90, 180, 270の方位角にdist離れたところの緯度経度を算出
-        // TODO: 検算が面倒なのでそこからminとmaxを使って取り出す。
-        
         let currentLocation = LocationManager.shared.coordinate
         let locations = [
             VincentyHelper.shared.calcurateNextPointLocation(from: currentLocation, s: dist, a1: 0.0),

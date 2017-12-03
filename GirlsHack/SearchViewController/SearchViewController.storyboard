@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aq1-4N-Qh5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zvz-5j-XCm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search-->
+        <!--Search View Controller-->
         <scene sceneID="LMq-Bm-UFb">
             <objects>
                 <viewController id="Zvz-5j-XCm" customClass="SearchViewController" customModule="GirlsHack" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Fvh-tN-8mZ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nmv-3c-BbT">
-                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d6Z-Nn-Skc">
                                     <size key="itemSize" width="50" height="50"/>
@@ -55,7 +55,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y1Q-Zh-IsN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Search" id="DXU-kW-guS"/>
                     <connections>
                         <outlet property="collectionView" destination="nmv-3c-BbT" id="icH-aH-IMB"/>
                         <outlet property="searchBar" destination="Fvh-tN-8mZ" id="7u7-HL-pW2"/>
@@ -64,25 +63,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJH-1Q-gbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2516" y="532.98350824587715"/>
-        </scene>
-        <!--Search-->
-        <scene sceneID="71c-jx-gRV">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aq1-4N-Qh5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="LVr-tD-fM9"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oBI-4i-sst">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Zvz-5j-XCm" kind="relationship" relationship="rootViewController" id="Fda-Qi-TmC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="clk-br-0ph" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1683.2" y="533.43328335832086"/>
         </scene>
     </scenes>
 </document>

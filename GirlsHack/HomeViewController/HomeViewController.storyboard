@@ -34,11 +34,20 @@
                     </navigationItem>
                     <connections>
                         <segue destination="IDq-bQ-4dL" kind="presentation" identifier="popupNotification" id="pbF-Wi-Mwz"/>
+                        <segue destination="NQw-Ie-WCh" kind="show" id="uGi-nQ-rqm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="686" y="106"/>
+        </scene>
+        <!--SearchViewController-->
+        <scene sceneID="45O-AS-7oL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchViewController" id="NQw-Ie-WCh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHy-JU-yj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321" y="-50"/>
         </scene>
         <!--PopupViewController-->
         <scene sceneID="Jjh-y3-6Qw">

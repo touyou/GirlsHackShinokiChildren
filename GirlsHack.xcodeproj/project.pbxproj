@@ -51,6 +51,8 @@
 		46BCC4331FD2FEE8003649D0 /* FirestoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4321FD2FEE8003649D0 /* FirestoreModel.swift */; };
 		46BCC4351FD38D8B003649D0 /* VincentyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4341FD38D8B003649D0 /* VincentyHelper.swift */; };
 		46BCC4371FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4361FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift */; };
+		46BCC43A1FD392E8003649D0 /* SearchResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4381FD392E8003649D0 /* SearchResultCollectionViewCell.swift */; };
+		46BCC43B1FD392E8003649D0 /* SearchResultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4391FD392E8003649D0 /* SearchResultCollectionViewCell.xib */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +103,8 @@
 		46BCC4321FD2FEE8003649D0 /* FirestoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreModel.swift; sourceTree = "<group>"; };
 		46BCC4341FD38D8B003649D0 /* VincentyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VincentyHelper.swift; sourceTree = "<group>"; };
 		46BCC4361FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extensions.swift"; sourceTree = "<group>"; };
+		46BCC4381FD392E8003649D0 /* SearchResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		46BCC4391FD392E8003649D0 /* SearchResultCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 			children = (
 				46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */,
 				46BCC3EC1FD27C39003649D0 /* SearchViewController.swift */,
+				46BCC4381FD392E8003649D0 /* SearchResultCollectionViewCell.swift */,
+				46BCC4391FD392E8003649D0 /* SearchResultCollectionViewCell.xib */,
 			);
 			path = SearchViewController;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,
 				46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */,
 				46BCC4291FD2E382003649D0 /* StampCollectionViewController.storyboard in Resources */,
+				46BCC43B1FD392E8003649D0 /* SearchResultCollectionViewCell.xib in Resources */,
 				46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */,
 				46BCC4221FD2A935003649D0 /* StampViewController.storyboard in Resources */,
 			);
@@ -375,7 +382,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -452,6 +459,7 @@
 				46BCC4151FD288E9003649D0 /* NibLoadable.swift in Sources */,
 				46BCC3F31FD27C53003649D0 /* HomeViewController.swift in Sources */,
 				46BCC4141FD288E9003649D0 /* Reusable.swift in Sources */,
+				46BCC43A1FD392E8003649D0 /* SearchResultCollectionViewCell.swift in Sources */,
 				46BCC4261FD2E339003649D0 /* StampPageViewController.swift in Sources */,
 				46BCC4201FD2A929003649D0 /* StampViewController.swift in Sources */,
 				46BCC42C1FD2ED0A003649D0 /* Stamp.swift in Sources */,

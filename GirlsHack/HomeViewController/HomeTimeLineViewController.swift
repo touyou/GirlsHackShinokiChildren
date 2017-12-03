@@ -12,26 +12,37 @@ import XLPagerTabStrip
 
 class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICollectionViewDataSource {
 
+    @IBOutlet weak var collectionView: UICollectionView! {
+
+        didSet {
+
+            collectionView.dataSource = self
+
+            collectionView.register(HomeTimeLineCollectionViewCell.self)
+        }
+    }
     // タブのタイトルを設定
     var itemInfo: IndicatorInfo = "TimeLine"
 
     //データの個数を返すメソッド
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return 100
+        return 10
     }
 
     //データを返すメソッド
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        //コレクションビューから識別子「CafeCell」のセルを取得する。
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CafeCell", for: indexPath as IndexPath) as UICollectionViewCell
+        let cell: HomeTimeLineCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
 
-        //セルの背景色をランダムに設定する。
-        cell.backgroundColor = UIColor(red: 0.5,
-                                       green: 0.5,
-                                       blue: 0,
-                                       alpha: 1.0)
+        //セルの画像を設定する
+        //cell.imageView.image = UIImage(named:"hoge.png")
+        //影をつける
+        cell.layer.masksToBounds = false; //必須
+        cell.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        cell.layer.shadowOpacity = 0.9;
+        cell.layer.shadowRadius = 2.0;
+
         return cell
     }
 
@@ -60,6 +71,31 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
     }
     */
 
+}
+
+extension HomeTimeLineViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let cellWidth = floor(collectionView.bounds.width)
+
+        return CGSize(width: cellWidth, height: cellWidth)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+
+        return 0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+
+        return 0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
+        return UIEdgeInsets.zero
+    }
 }
 
 extension HomeTimeLineViewController: StoryboardInstantiable {}

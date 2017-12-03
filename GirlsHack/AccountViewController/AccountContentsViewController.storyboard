@@ -18,10 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yFz-l9-hhk" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yFz-l9-hhk" customClass="ButtonBarView" customModule="XLPagerTabStrip">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DTf-FU-7PI"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xNq-Pg-ate">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -30,12 +32,20 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ywc-Px-AL1">
-                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ywc-Px-AL1">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ywc-Px-AL1" firstAttribute="top" secondItem="yFz-l9-hhk" secondAttribute="bottom" id="8yJ-tl-nrj"/>
+                            <constraint firstItem="Ywc-Px-AL1" firstAttribute="leading" secondItem="rRF-fl-0Of" secondAttribute="leading" id="KL4-mU-rV7"/>
+                            <constraint firstItem="yFz-l9-hhk" firstAttribute="top" secondItem="7Xy-cG-uCZ" secondAttribute="top" id="Sbe-H4-mFQ"/>
+                            <constraint firstItem="yFz-l9-hhk" firstAttribute="trailing" secondItem="rRF-fl-0Of" secondAttribute="trailing" id="coa-lf-8Aa"/>
+                            <constraint firstItem="yFz-l9-hhk" firstAttribute="leading" secondItem="rRF-fl-0Of" secondAttribute="leading" id="eRK-Hz-lQW"/>
+                            <constraint firstItem="Ywc-Px-AL1" firstAttribute="bottom" secondItem="rRF-fl-0Of" secondAttribute="bottom" id="t7t-8q-n9X"/>
+                            <constraint firstItem="Ywc-Px-AL1" firstAttribute="trailing" secondItem="rRF-fl-0Of" secondAttribute="trailing" id="xxr-e9-UqJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rRF-fl-0Of"/>
                     </view>
                     <connections>

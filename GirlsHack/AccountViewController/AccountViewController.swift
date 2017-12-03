@@ -22,7 +22,7 @@ class AccountViewController: UIViewController {
         didSet {
             
             let viewController = AccountContentsViewController.instantiate()
-            viewController.view.frame = containerView.frame
+            viewController.view.frame = containerView.bounds
             containerView.addSubview(viewController.view)
             addChildViewController(viewController)
         }

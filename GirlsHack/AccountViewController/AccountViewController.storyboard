@@ -11,6 +11,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LucidaGrande.ttc">
+            <string>LucidaGrande</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Account View Controller-->
         <scene sceneID="EEG-hB-T34">
@@ -21,43 +26,66 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdv-sx-Iuv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="133.5"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@chanue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfG-Ry-oOt">
+                                        <rect key="frame" x="25" y="57" width="69.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sfG-Ry-oOt" firstAttribute="centerY" secondItem="kdv-sx-Iuv" secondAttribute="centerY" id="O25-u9-OBA"/>
+                                    <constraint firstItem="sfG-Ry-oOt" firstAttribute="leading" secondItem="kdv-sx-Iuv" secondAttribute="leading" constant="25" id="ync-uo-sKZ"/>
+                                </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3f-vA-kTq">
-                                <rect key="frame" x="201" y="122" width="143" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_4049.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="X3f-vA-kTq">
+                                <rect key="frame" x="195" y="114" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="X3f-vA-kTq" secondAttribute="height" multiplier="1:1" id="1jW-Dp-5QW"/>
+                                    <constraint firstAttribute="width" constant="150" id="vgG-EO-eYJ"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="友達" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYp-Kt-Zc8">
-                                <rect key="frame" x="46" y="213" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="友達" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYp-Kt-Zc8">
+                                <rect key="frame" x="45" y="213" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="イン数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ9-Sh-Rir">
-                                <rect key="frame" x="110" y="212" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="イン数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ9-Sh-Rir">
+                                <rect key="frame" x="110" y="213" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FiK-fY-6QZ">
-                                <rect key="frame" x="0.0" y="258" width="375" height="409"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiK-fY-6QZ">
+                                <rect key="frame" x="0.0" y="269" width="375" height="398"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="kdv-sx-Iuv" firstAttribute="trailing" secondItem="GT2-0y-Q36" secondAttribute="trailing" id="365-eF-QSR"/>
+                            <constraint firstItem="OYp-Kt-Zc8" firstAttribute="top" secondItem="kdv-sx-Iuv" secondAttribute="bottom" constant="15" id="3xC-WJ-652"/>
                             <constraint firstItem="kdv-sx-Iuv" firstAttribute="top" secondItem="GT2-0y-Q36" secondAttribute="top" id="5Zq-cr-upV"/>
-                            <constraint firstItem="FiK-fY-6QZ" firstAttribute="top" secondItem="X3f-vA-kTq" secondAttribute="bottom" constant="8" id="DRb-T8-VGU"/>
                             <constraint firstItem="FiK-fY-6QZ" firstAttribute="leading" secondItem="GT2-0y-Q36" secondAttribute="leading" id="F6T-rz-Drs"/>
                             <constraint firstItem="FiK-fY-6QZ" firstAttribute="bottom" secondItem="GT2-0y-Q36" secondAttribute="bottom" id="M6s-ju-cAa"/>
                             <constraint firstItem="kdv-sx-Iuv" firstAttribute="height" secondItem="kSW-rJ-9Hc" secondAttribute="height" multiplier="0.2" id="Oef-jU-elX"/>
+                            <constraint firstItem="OYp-Kt-Zc8" firstAttribute="leading" secondItem="GT2-0y-Q36" secondAttribute="leading" constant="45" id="TLG-EK-RcD"/>
+                            <constraint firstItem="AJ9-Sh-Rir" firstAttribute="leading" secondItem="OYp-Kt-Zc8" secondAttribute="trailing" constant="30" id="Uch-Vl-i6a"/>
                             <constraint firstItem="GT2-0y-Q36" firstAttribute="trailing" secondItem="X3f-vA-kTq" secondAttribute="trailing" constant="30" id="de5-hV-Zr4"/>
+                            <constraint firstItem="FiK-fY-6QZ" firstAttribute="top" secondItem="OYp-Kt-Zc8" secondAttribute="bottom" constant="35" id="fQU-so-vOl"/>
                             <constraint firstItem="kdv-sx-Iuv" firstAttribute="leading" secondItem="GT2-0y-Q36" secondAttribute="leading" id="p2C-he-Fim"/>
+                            <constraint firstItem="AJ9-Sh-Rir" firstAttribute="top" secondItem="kdv-sx-Iuv" secondAttribute="bottom" constant="15" id="ttM-nk-NqK"/>
                             <constraint firstItem="X3f-vA-kTq" firstAttribute="top" secondItem="GT2-0y-Q36" secondAttribute="top" constant="50" id="uZU-Tb-iVU"/>
                             <constraint firstItem="FiK-fY-6QZ" firstAttribute="trailing" secondItem="GT2-0y-Q36" secondAttribute="trailing" id="zoo-0O-8aY"/>
                         </constraints>
@@ -81,4 +109,7 @@
             <point key="canvasLocation" x="725.60000000000002" y="1689.8050974512746"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_4049.JPG" width="1242" height="1242"/>
+    </resources>
 </document>

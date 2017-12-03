@@ -54,15 +54,16 @@ extension StampCollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: StampCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
 
-        if indexPath.row < stamps.count {
-            
+//        if indexPath.row < stamps.count {
+        
 //            cell.iconImageView.image = stamps[indexPath.row].iconImage
             cell.iconImageView.image = UIImage(named: "stamp")
-            cell.photoImageView.image = stamps[indexPath.row].photo
-        } else {
-            
-            // TODO: スタンプが無い時
-        }
+//            cell.photoImageView.image = stamps[indexPath.row].photo
+            cell.photoImageView.image = AccountHelper.shared.dummyImage[indexPath.row % 3]
+//        } else {
+//
+//            // TODO: スタンプが無い時
+//        }
         
         return cell
     }

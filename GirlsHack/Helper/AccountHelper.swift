@@ -32,6 +32,8 @@ class AccountHelper: NSObject {
     static let shared = AccountHelper()
     let cache = UserDefaults.standard
     let defaultStore: Firestore!
+    
+    let dummyImage = [UIImage(named: "photo1.jpg")!, UIImage(named: "photo2.jpg")!, UIImage(named: "photo3.jpg")!]
 
     private var ref: DocumentReference?
     private var listener: ListenerRegistration?

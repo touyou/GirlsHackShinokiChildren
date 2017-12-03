@@ -58,13 +58,16 @@ extension SearchViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return searchPost.count
+//        return searchPost.count
+        return 100
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: SearchResultCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         
-        cell.imageView.kf.setImage(with: URL(string: searchPost[indexPath.row].photoURL))
+//        cell.imageView.kf.setImage(with: URL(string: searchPost[indexPath.row].photoURL))
+        
+        cell.imageView.image = AccountHelper.shared.dummyImage[indexPath.row % 3]
         
         return cell
     }

@@ -43,11 +43,8 @@ extension AccountTimelineViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: HomeTimeLineCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         
-        cell.backgroundColor = .white
-        cell.layer.masksToBounds = false
-        cell.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        cell.layer.shadowOpacity = 0.6
-        cell.layer.shadowRadius = 2.0
+        let imgArray = [UIImage(named: "timeline01.png"), UIImage(named: "timeline02.png")]
+        cell.imageView.image = imgArray[indexPath.row % 2]
         
         return cell
     }

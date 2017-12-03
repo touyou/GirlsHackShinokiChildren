@@ -22,21 +22,29 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zgw-id-EK7">
                         <rect key="frame" x="0.0" y="0.0" width="257" height="264"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUv-pG-pJi">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bx7-VK-HfQ">
                         <rect key="frame" x="0.0" y="0.0" width="257" height="264"/>
+                        <color key="backgroundColor" white="0.25" alpha="0.30995826198630139" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUv-pG-pJi">
+                        <rect key="frame" x="10" y="10" width="237" height="244"/>
                     </imageView>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="bx7-VK-HfQ" secondAttribute="bottom" id="4SQ-ab-KyF"/>
                 <constraint firstItem="Zgw-id-EK7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6ny-Yz-4n9"/>
                 <constraint firstItem="Zgw-id-EK7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="D5F-2F-qdK"/>
+                <constraint firstAttribute="trailing" secondItem="bx7-VK-HfQ" secondAttribute="trailing" id="DaC-Iq-flr"/>
+                <constraint firstItem="bx7-VK-HfQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="La0-ET-QaI"/>
                 <constraint firstAttribute="bottom" secondItem="Zgw-id-EK7" secondAttribute="bottom" id="M8M-oi-RZ0"/>
-                <constraint firstAttribute="bottom" secondItem="NUv-pG-pJi" secondAttribute="bottom" id="Pjl-Ro-KCe"/>
-                <constraint firstItem="NUv-pG-pJi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aHK-YJ-teG"/>
-                <constraint firstItem="NUv-pG-pJi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aa1-qG-g06"/>
+                <constraint firstAttribute="bottom" secondItem="NUv-pG-pJi" secondAttribute="bottom" constant="10" id="Pjl-Ro-KCe"/>
+                <constraint firstItem="NUv-pG-pJi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="aHK-YJ-teG"/>
+                <constraint firstItem="NUv-pG-pJi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="aa1-qG-g06"/>
+                <constraint firstItem="bx7-VK-HfQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dre-Ly-fha"/>
                 <constraint firstAttribute="trailing" secondItem="Zgw-id-EK7" secondAttribute="trailing" id="j6G-4B-SIl"/>
-                <constraint firstAttribute="trailing" secondItem="NUv-pG-pJi" secondAttribute="trailing" id="owQ-WQ-NOh"/>
+                <constraint firstAttribute="trailing" secondItem="NUv-pG-pJi" secondAttribute="trailing" constant="10" id="owQ-WQ-NOh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="257" height="264"/>

@@ -39,7 +39,7 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        performSegue(withIdentifier: "popupNotification", sender: nil)
+//        performSegue(withIdentifier: "popupNotification", sender: nil)
     }
 
     override func viewDidAppear(_ animated: Bool) {

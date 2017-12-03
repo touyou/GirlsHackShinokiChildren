@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */; };
+		4664F9F31FD3A42A0030A171 /* HomeTimeLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664F9F21FD3A4290030A171 /* HomeTimeLineCollectionViewCell.swift */; };
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
 		46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */; };
 		46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E41FD27BE1003649D0 /* ActivityViewController.storyboard */; };
 		46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */; };
-		46BCC3E91FD27BEC003649D0 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E81FD27BEC003649D0 /* HomeViewController.storyboard */; };
 		46BCC3EB1FD27C2F003649D0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */; };
 		46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3EC1FD27C39003649D0 /* SearchViewController.swift */; };
 		46BCC3EF1FD27C41003649D0 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3EE1FD27C41003649D0 /* ActivityViewController.swift */; };
@@ -61,6 +62,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		4664F9F11FD3A4290030A171 /* HomeTimeLineCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeTimeLineCollectionViewCell.xib; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/HomeViewController/HomeTimeLineCollectionViewCell.xib; sourceTree = "<absolute>"; };
+		4664F9F21FD3A4290030A171 /* HomeTimeLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTimeLineCollectionViewCell.swift; path = /Users/touyou/iPhoneApp/GirlsHack/GirlsHack/HomeViewController/HomeTimeLineCollectionViewCell.swift; sourceTree = "<absolute>"; };
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,7 +73,6 @@
 		46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditViewController.storyboard; sourceTree = "<group>"; };
 		46BCC3E41FD27BE1003649D0 /* ActivityViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActivityViewController.storyboard; sourceTree = "<group>"; };
 		46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
-		46BCC3E81FD27BEC003649D0 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		46BCC3EC1FD27C39003649D0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		46BCC3EE1FD27C41003649D0 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
@@ -187,12 +190,14 @@
 		46BCC3DC1FD27B96003649D0 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4664F9F21FD3A4290030A171 /* HomeTimeLineCollectionViewCell.swift */,
+				4664F9F11FD3A4290030A171 /* HomeTimeLineCollectionViewCell.xib */,
 				46BCC43C1FD3981E003649D0 /* HomeMapViewController.swift */,
 				46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */,
 				46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */,
 				46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */,
-				46BCC3E81FD27BEC003649D0 /* HomeViewController.storyboard */,
 				46BCC3F21FD27C53003649D0 /* HomeViewController.swift */,
+				4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */,
 				46BCC41F1FD2A929003649D0 /* StampViewController.swift */,
 				46BCC4211FD2A935003649D0 /* StampViewController.storyboard */,
 				46BCC4251FD2E339003649D0 /* StampPageViewController.swift */,
@@ -355,11 +360,11 @@
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
 				46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */,
 				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
-				46BCC3E91FD27BEC003649D0 /* HomeViewController.storyboard in Resources */,
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,
 				46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */,
 				46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */,
 				46BCC4291FD2E382003649D0 /* StampCollectionViewController.storyboard in Resources */,
+				4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */,
 				46BCC43B1FD392E8003649D0 /* SearchResultCollectionViewCell.xib in Resources */,
 				46BCC3E71FD27BE7003649D0 /* SearchViewController.storyboard in Resources */,
 				46BCC4221FD2A935003649D0 /* StampViewController.storyboard in Resources */,
@@ -465,6 +470,7 @@
 				46BCC4091FD28889003649D0 /* UITableView+Extensions.swift in Sources */,
 				46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */,
 				46BCC4191FD29866003649D0 /* LocalCollection.swift in Sources */,
+				4664F9F31FD3A42A0030A171 /* HomeTimeLineCollectionViewCell.swift in Sources */,
 				46BCC42F1FD2F1A0003649D0 /* StampCollectionViewCell.swift in Sources */,
 				46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */,
 				46BCC4331FD2FEE8003649D0 /* FirestoreModel.swift in Sources */,

@@ -34,7 +34,7 @@
                                 <cells/>
                             </collectionView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6f-df-3Kq">
-                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVj-Gk-FtG">
                                 <rect key="frame" x="165" y="597" width="45" height="45"/>
@@ -57,7 +57,7 @@
                             <constraint firstItem="q6f-df-3Kq" firstAttribute="bottom" secondItem="Q4g-Iy-ZPG" secondAttribute="bottom" id="iRI-h7-lHe"/>
                             <constraint firstItem="0rY-bK-Bxe" firstAttribute="top" secondItem="Q4g-Iy-ZPG" secondAttribute="top" id="jc4-iN-zuW"/>
                             <constraint firstItem="hVj-Gk-FtG" firstAttribute="centerX" secondItem="QXw-yu-HtE" secondAttribute="centerX" id="pbC-k3-9oB"/>
-                            <constraint firstItem="q6f-df-3Kq" firstAttribute="top" secondItem="0rY-bK-Bxe" secondAttribute="bottom" constant="8" id="yWd-5e-iXy"/>
+                            <constraint firstItem="q6f-df-3Kq" firstAttribute="top" secondItem="0rY-bK-Bxe" secondAttribute="bottom" id="yWd-5e-iXy"/>
                             <constraint firstItem="Q4g-Iy-ZPG" firstAttribute="bottom" secondItem="hVj-Gk-FtG" secondAttribute="bottom" constant="25" id="yob-kw-or6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q4g-Iy-ZPG"/>

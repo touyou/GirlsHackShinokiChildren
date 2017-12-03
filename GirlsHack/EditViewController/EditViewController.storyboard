@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,12 +65,17 @@
                                 <action selector="touchUpInsideCancelButton:" destination="J7R-hu-fQe" id="NN2-nH-IMp"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="次へ" id="NO3-fY-qJa"/>
+                        <barButtonItem key="rightBarButtonItem" title="次へ" id="NO3-fY-qJa">
+                            <connections>
+                                <action selector="touchUpInsideNextButton:" destination="J7R-hu-fQe" id="Qeg-J0-tlk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="collectionView" destination="pcJ-kp-K1A" id="niQ-VQ-EeW"/>
                         <outlet property="previewImageView" destination="pQW-8H-JOr" id="zFV-PN-8HI"/>
+                        <outlet property="touchUpInsideNextButton" destination="NO3-fY-qJa" id="LwE-Xc-QH7"/>
                         <segue destination="K9P-sL-zHX" kind="show" identifier="toMessageView" id="0Zu-Lk-Wmh"/>
                     </connections>
                 </viewController>
@@ -85,22 +91,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iZj-r3-NpY">
-                                <rect key="frame" x="135" y="64" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iZj-r3-NpY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="333.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iZj-r3-NpY" firstAttribute="top" secondItem="UvR-4f-PIX" secondAttribute="top" id="9bQ-br-ilb"/>
+                            <constraint firstItem="iZj-r3-NpY" firstAttribute="leading" secondItem="UvR-4f-PIX" secondAttribute="leading" id="Q2b-TN-BUp"/>
+                            <constraint firstItem="iZj-r3-NpY" firstAttribute="trailing" secondItem="UvR-4f-PIX" secondAttribute="trailing" id="We4-oq-U8c"/>
+                            <constraint firstItem="iZj-r3-NpY" firstAttribute="height" secondItem="FMz-1b-LmX" secondAttribute="height" multiplier="0.5" id="hbf-oQ-du1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UvR-4f-PIX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05p-RH-boc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2614" y="853"/>
+            <point key="canvasLocation" x="2613.5999999999999" y="852.3238380809596"/>
         </scene>
     </scenes>
 </document>

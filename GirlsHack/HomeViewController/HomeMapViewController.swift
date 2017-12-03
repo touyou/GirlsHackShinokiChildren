@@ -27,7 +27,6 @@ class HomeMapViewController: UIViewController, IndicatorInfoProvider {    // 「
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return itemInfo
     }
-    
 
     /*
     // MARK: - Navigation

@@ -46,6 +46,7 @@
 		4664FA3E1FD3DDC60030A171 /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA3C1FD3DDC60030A171 /* photo1.jpg */; };
 		4664FA401FD3DDE00030A171 /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA3F1FD3DDE00030A171 /* photo3.jpg */; };
 		4664FA421FD3E0C90030A171 /* IMG_4049.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA411FD3E0C80030A171 /* IMG_4049.JPG */; };
+		4664FA451FD3E8470030A171 /* IMG_4039.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA441FD3E8470030A171 /* IMG_4039.JPG */; };
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
@@ -127,6 +128,7 @@
 		4664FA3C1FD3DDC60030A171 /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
 		4664FA3F1FD3DDE00030A171 /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
 		4664FA411FD3E0C80030A171 /* IMG_4049.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4049.JPG; sourceTree = "<group>"; };
+		4664FA441FD3E8470030A171 /* IMG_4039.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4039.JPG; sourceTree = "<group>"; };
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -412,6 +414,7 @@
 				4664FA3B1FD3DDC50030A171 /* photo2.jpg */,
 				4664FA3F1FD3DDE00030A171 /* photo3.jpg */,
 				4664FA411FD3E0C80030A171 /* IMG_4049.JPG */,
+				4664FA441FD3E8470030A171 /* IMG_4039.JPG */,
 				58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */,
 			);
 			path = assets;
@@ -506,6 +509,7 @@
 				46BCC41E1FD2A478003649D0 /* PopupViewController.storyboard in Resources */,
 				4664F9F51FD3A71E0030A171 /* AccountViewController.storyboard in Resources */,
 				46BCC3F41FD27C96003649D0 /* (null) in Resources */,
+				4664FA451FD3E8470030A171 /* IMG_4039.JPG in Resources */,
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
 				4664FA001FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib in Resources */,
 				46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */,

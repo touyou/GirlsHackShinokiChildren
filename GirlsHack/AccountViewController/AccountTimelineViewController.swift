@@ -26,6 +26,8 @@ class AccountTimelineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
 }
 
 extension AccountTimelineViewController: UICollectionViewDataSource {
@@ -47,6 +49,14 @@ extension AccountTimelineViewController: UICollectionViewDataSource {
         cell.imageView.image = imgArray[indexPath.row % 2]
         
         return cell
+    }
+}
+
+extension AccountTimelineViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        UIApplication.shared.topPresentedNavigationController?.pushViewController(ActivityViewController.instantiate(), animated: true)
     }
 }
 

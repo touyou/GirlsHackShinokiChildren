@@ -86,6 +86,11 @@ class EditViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func touchUpInsideNextButton(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toMessageView", sender: nil)
+    }
+    
 }
 
 // MARK: - CollectionViewDataSource

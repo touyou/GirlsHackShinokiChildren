@@ -13,6 +13,9 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
 
     static var kAssocKeyWindow: String?
 
+    @IBOutlet weak var accountButton: UIBarButtonItem!
+    @IBOutlet weak var searchButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         
         settings.style.buttonBarBackgroundColor = .white
@@ -29,6 +32,7 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarRightContentInset = 0
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             
+            guard let `self` = self else { return }
             guard changeCurrentIndex == true else { return }
             // 選択されていないボタンのテキスト色
             oldCell?.label.textColor = .black
@@ -36,14 +40,11 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
             newCell?.label.textColor = .yellow
             
             //レンダリングモードをAlwayOriginalにして画像を読み込む。
-            let image = UIImage(named: "menuicon_navbar.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-            let image02 = UIImage(named: "searchicon_navbar.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            let image = UIImage(named: "menuicon_navbar")!.withRenderingMode(.alwaysOriginal)
+            let image02 = UIImage(named: "searchicon_navbar")!.withRenderingMode(.alwaysOriginal)
             
-            //ボタンを作成する。
-            let button = UIBarButtonItem(image:image , style: UIBarButtonItemStyle.Plain, target:nil, action: nil)
-            
-            //ボタンをツールバーに設定する。
-            testToolbar.items = [button]
+            self.accountButton.image = image
+            self.searchButton.image = image02
         }
 
         super.viewDidLoad()
@@ -74,7 +75,13 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func touchUpInsideEdit(_ sender: Any) {
+        
+        let editViewController = EditViewController.instantiate()
+        let navi = UINavigationController(rootViewController: editViewController)
+        present(navi, animated: true, completion: nil)
+    }
+    
     @IBAction func tappedStampButton(_ sender: Any) {
 
         performSegue(withIdentifier: "toAccountView", sender: nil)

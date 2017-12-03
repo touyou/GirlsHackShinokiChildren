@@ -14,8 +14,20 @@
 		4664F9FA1FD3AF560030A171 /* EditImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9F81FD3AF560030A171 /* EditImageCollectionViewCell.xib */; };
 		4664F9FF1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664F9FD1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift */; };
 		4664FA001FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4664F9FE1FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib */; };
-		4664FA031FD3B09F0030A171 /* ohisama_ls.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA011FD3B09E0030A171 /* ohisama_ls.png */; };
 		4664FA041FD3B09F0030A171 /* title_ls.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA021FD3B09E0030A171 /* title_ls.png */; };
+		4664FA081FD3BE110030A171 /* addButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42501FD3BC77006C9C60 /* addButton.png */; };
+		4664FA091FD3BE110030A171 /* addButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424F1FD3BC77006C9C60 /* addButton@2x.png */; };
+		4664FA0A1FD3BE110030A171 /* map icon_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424E1FD3BB8A006C9C60 /* map icon_off.png */; };
+		4664FA0B1FD3BE110030A171 /* map icon_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42491FD3BB88006C9C60 /* map icon_off@2x.png */; };
+		4664FA0C1FD3BE110030A171 /* map icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424C1FD3BB89006C9C60 /* map icon.png */; };
+		4664FA0D1FD3BE110030A171 /* map icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42481FD3BB87006C9C60 /* map icon@2x.png */; };
+		4664FA0E1FD3BE110030A171 /* timeline icon_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424A1FD3BB88006C9C60 /* timeline icon_on.png */; };
+		4664FA0F1FD3BE110030A171 /* timeline icon_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424D1FD3BB89006C9C60 /* timeline icon_on@2x.png */; };
+		4664FA101FD3BE110030A171 /* timeline icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA424B1FD3BB89006C9C60 /* timeline icon.png */; };
+		4664FA111FD3BE110030A171 /* timeline icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */; };
+		4664FA121FD3BE110030A171 /* menuicon_navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */; };
+		4664FA131FD3BE110030A171 /* searchicon_navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */; };
+		4664FA161FD3C21D0030A171 /* ohisama_ls.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA141FD3C1EB0030A171 /* ohisama_ls.png */; };
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
@@ -78,8 +90,9 @@
 		4664F9F81FD3AF560030A171 /* EditImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		4664F9FD1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		4664F9FE1FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditButtonCollectionViewCell.xib; sourceTree = "<group>"; };
-		4664FA011FD3B09E0030A171 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohisama_ls.png; path = ../../../../Downloads/ohisama_ls.png; sourceTree = "<group>"; };
+		4664FA011FD3B09E0030A171 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohisama_ls.png; path = /Downloads/ohisama_ls.png; sourceTree = "<absolute>"; };
 		4664FA021FD3B09E0030A171 /* title_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_ls.png; sourceTree = "<group>"; };
+		4664FA141FD3C1EB0030A171 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohisama_ls.png; path = ../../../../Downloads/ohisama_ls.png; sourceTree = "<group>"; };
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,7 +144,6 @@
 		46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeMapViewController.storyboard; sourceTree = "<group>"; };
 		46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTimeLineViewController.storyboard; sourceTree = "<group>"; };
 		58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = LucidaGrande.ttc; sourceTree = "<group>"; };
-		58BA42441FD3AB79006C9C60 /* ohisama_ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ohisama_ls.png; sourceTree = "<group>"; };
 		58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon_navbar.png; sourceTree = "<group>"; };
 		58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchicon_navbar.png; sourceTree = "<group>"; };
 		58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timeline icon@2x.png"; sourceTree = "<group>"; };
@@ -178,6 +190,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4664FA051FD3BDCC0030A171 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				4664FA011FD3B09E0030A171 /* ohisama_ls.png */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		46BCC3BB1FD26CA4003649D0 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +205,7 @@
 				46BCC3C51FD26CA4003649D0 /* Products */,
 				273919F38A8BCB4171BB2E66 /* Pods */,
 				2A1B99CC0FA1F99C3D3EB0F4 /* Frameworks */,
+				4664FA051FD3BDCC0030A171 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -340,7 +361,7 @@
 				58BA42471FD3BB87006C9C60 /* timeline icon@2x.png */,
 				58BA42451FD3B87E006C9C60 /* menuicon_navbar.png */,
 				58BA42461FD3B87F006C9C60 /* searchicon_navbar.png */,
-				58BA42441FD3AB79006C9C60 /* ohisama_ls.png */,
+				4664FA141FD3C1EB0030A171 /* ohisama_ls.png */,
 				4664FA021FD3B09E0030A171 /* title_ls.png */,
 				58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */,
 			);
@@ -409,6 +430,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4664FA161FD3C21D0030A171 /* ohisama_ls.png in Resources */,
+				4664FA081FD3BE110030A171 /* addButton.png in Resources */,
+				4664FA091FD3BE110030A171 /* addButton@2x.png in Resources */,
+				4664FA0A1FD3BE110030A171 /* map icon_off.png in Resources */,
+				4664FA0B1FD3BE110030A171 /* map icon_off@2x.png in Resources */,
+				4664FA0C1FD3BE110030A171 /* map icon.png in Resources */,
+				4664FA0D1FD3BE110030A171 /* map icon@2x.png in Resources */,
+				4664FA0E1FD3BE110030A171 /* timeline icon_on.png in Resources */,
+				4664FA0F1FD3BE110030A171 /* timeline icon_on@2x.png in Resources */,
+				4664FA101FD3BE110030A171 /* timeline icon.png in Resources */,
+				4664FA111FD3BE110030A171 /* timeline icon@2x.png in Resources */,
+				4664FA121FD3BE110030A171 /* menuicon_navbar.png in Resources */,
+				4664FA131FD3BE110030A171 /* searchicon_navbar.png in Resources */,
 				4664F9FA1FD3AF560030A171 /* EditImageCollectionViewCell.xib in Resources */,
 				46BCC4311FD2F43E003649D0 /* StampPageViewController.storyboard in Resources */,
 				46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */,
@@ -423,7 +457,6 @@
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,
 				46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */,
 				46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */,
-				4664FA031FD3B09F0030A171 /* ohisama_ls.png in Resources */,
 				46BCC4291FD2E382003649D0 /* StampCollectionViewController.storyboard in Resources */,
 				58BA42421FD3A9B5006C9C60 /* LucidaGrande.ttc in Resources */,
 				4664F9EA1FD3A1290030A171 /* HomeViewController.storyboard in Resources */,

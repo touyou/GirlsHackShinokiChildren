@@ -22,22 +22,22 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         // ButtonBarItemの背景色
         settings.style.buttonBarItemBackgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         // 選択中のButtonBarの下部の色
-        settings.style.selectedBarBackgroundColor = .orange
+        settings.style.selectedBarBackgroundColor = .white
         settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 14)
         settings.style.selectedBarHeight = 2.0
         settings.style.buttonBarMinimumLineSpacing = 0
         settings.style.buttonBarItemTitleColor = .black
         settings.style.buttonBarItemsShouldFillAvailiableWidth = true
-        settings.style.buttonBarLeftContentInset = 0
-        settings.style.buttonBarRightContentInset = 0
+        settings.style.buttonBarLeftContentInset = self.view.bounds.width/2 - self.view.bounds.width/6
+        settings.style.buttonBarRightContentInset = self.view.bounds.width/2 - self.view.bounds.width/6
+        settings.style.buttonBarMinimumLineSpacing = self.view.bounds.width/10
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             
             guard let `self` = self else { return }
             guard changeCurrentIndex == true else { return }
-            // 選択されていないボタンのテキスト色
-            oldCell?.label.textColor = .black
-            // 選択されているボタンのテキスト色
-            newCell?.label.textColor = .yellow
+            // ボタン画像の比率
+            oldCell?.imageView.contentMode = UIViewContentMode.scaleAspectFit
+            newCell?.imageView.contentMode = UIViewContentMode.scaleAspectFit
             
             //レンダリングモードをAlwayOriginalにして画像を読み込む。
             let image = UIImage(named: "menuicon_navbar")!.withRenderingMode(.alwaysOriginal)
@@ -46,6 +46,8 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
             self.accountButton.image = image
             self.searchButton.image = image02
         }
+
+        buttonBarView.contentMode = .scaleAspectFit
 
         super.viewDidLoad()
 

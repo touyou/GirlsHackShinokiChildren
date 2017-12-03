@@ -12,7 +12,7 @@ import UIKit
 
 extension UIColor {
     
-    struct MusicApp {
+    struct Original {
         
         static var white: UIColor { return UIColor(hex: "#FFFFFF") }
         static var background: UIColor { return UIColor(hex: "#FAFAFA") }

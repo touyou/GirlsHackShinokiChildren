@@ -4,13 +4,14 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
     </dependencies>
     <scenes>
         <!--Stamp Page View Controller-->
         <scene sceneID="Wnl-TO-ele">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="RHK-oE-zbI" customClass="StampPageViewController" customModule="GirlsHack" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="RHK-oE-zbI" customClass="StampPageViewController" customModule="GirlsHack" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63U-31-Iu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-290" y="125"/>

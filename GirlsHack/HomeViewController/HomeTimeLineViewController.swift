@@ -22,7 +22,6 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
     }
     // タブのタイトルを設定
     var itemInfo: IndicatorInfo = IndicatorInfo (image: #imageLiteral(resourceName: "timeline icon"), highlightedImage: #imageLiteral(resourceName: "timeline icon_on"))
-
     //データの個数を返すメソッド
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {

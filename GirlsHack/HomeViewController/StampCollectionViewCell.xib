@@ -19,15 +19,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="257" height="264"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zgw-id-EK7">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zgw-id-EK7">
                         <rect key="frame" x="0.0" y="0.0" width="257" height="264"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUv-pG-pJi">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUv-pG-pJi">
                         <rect key="frame" x="0.0" y="0.0" width="257" height="264"/>
                     </imageView>
                 </subviews>
             </view>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Zgw-id-EK7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6ny-Yz-4n9"/>
                 <constraint firstItem="Zgw-id-EK7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="D5F-2F-qdK"/>

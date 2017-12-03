@@ -56,10 +56,10 @@ extension StampPageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        if currentStart + StampPageViewController.stampCountPerPage >= stamps.count {
-            
-            return nil
-        }
+//        if currentStart + StampPageViewController.stampCountPerPage >= stamps.count {
+//
+//            return nil
+//        }
         
         let viewController = StampCollectionViewController.instantiate()
         let afterStart = currentStart + StampPageViewController.stampCountPerPage

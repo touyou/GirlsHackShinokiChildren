@@ -36,7 +36,6 @@
 		46BCC4141FD288E9003649D0 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4101FD288E8003649D0 /* Reusable.swift */; };
 		46BCC4151FD288E9003649D0 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4111FD288E9003649D0 /* NibLoadable.swift */; };
 		46BCC4171FD2893D003649D0 /* AccountHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4161FD2893D003649D0 /* AccountHelper.swift */; };
-<<<<<<< touyou
 		46BCC4191FD29866003649D0 /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4181FD29866003649D0 /* LocalCollection.swift */; };
 		46BCC41C1FD2A46C003649D0 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC41B1FD2A46C003649D0 /* PopupViewController.swift */; };
 		46BCC41E1FD2A478003649D0 /* PopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC41D1FD2A478003649D0 /* PopupViewController.storyboard */; };
@@ -58,12 +57,6 @@
 		46BCC43F1FD3981E003649D0 /* HomeTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */; };
 		46BCC4411FD39984003649D0 /* HomeMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */; };
 		46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */; };
-=======
-		8911C11B1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911C11A1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift */; };
-		89C6C68C1FD2A8E200057CAD /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C6C68B1FD2A8E100057CAD /* AccountViewController.storyboard */; };
-		89C6C68E1FD2B12000057CAD /* HomeTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C6C68D1FD2B12000057CAD /* HomeTimeLineViewController.swift */; };
-		89C6C6921FD2B19F00057CAD /* HomeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C6C6911FD2B19F00057CAD /* HomeMapViewController.swift */; };
->>>>>>> master
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,7 +91,6 @@
 		46BCC4101FD288E8003649D0 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		46BCC4111FD288E9003649D0 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		46BCC4161FD2893D003649D0 /* AccountHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHelper.swift; sourceTree = "<group>"; };
-<<<<<<< touyou
 		46BCC4181FD29866003649D0 /* LocalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCollection.swift; sourceTree = "<group>"; };
 		46BCC41B1FD2A46C003649D0 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		46BCC41D1FD2A478003649D0 /* PopupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopupViewController.storyboard; sourceTree = "<group>"; };
@@ -120,12 +112,6 @@
 		46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTimeLineViewController.swift; sourceTree = "<group>"; };
 		46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeMapViewController.storyboard; sourceTree = "<group>"; };
 		46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTimeLineViewController.storyboard; sourceTree = "<group>"; };
-=======
-		8911C11A1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTimeLineCollectionViewCell.swift; sourceTree = "<group>"; };
-		89C6C68B1FD2A8E100057CAD /* AccountViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountViewController.storyboard; sourceTree = "<group>"; };
-		89C6C68D1FD2B12000057CAD /* HomeTimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTimeLineViewController.swift; sourceTree = "<group>"; };
-		89C6C6911FD2B19F00057CAD /* HomeMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
->>>>>>> master
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,7 +193,6 @@
 				46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */,
 				46BCC3E81FD27BEC003649D0 /* HomeViewController.storyboard */,
 				46BCC3F21FD27C53003649D0 /* HomeViewController.swift */,
-<<<<<<< touyou
 				46BCC41F1FD2A929003649D0 /* StampViewController.swift */,
 				46BCC4211FD2A935003649D0 /* StampViewController.storyboard */,
 				46BCC4251FD2E339003649D0 /* StampPageViewController.swift */,
@@ -216,10 +201,6 @@
 				46BCC4281FD2E382003649D0 /* StampCollectionViewController.storyboard */,
 				46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */,
 				46BCC42E1FD2F1A0003649D0 /* StampCollectionViewCell.xib */,
-=======
-				89C6C6911FD2B19F00057CAD /* HomeMapViewController.swift */,
-				8911C11A1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift */,
->>>>>>> master
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -501,11 +482,7 @@
 				46BCC4121FD288E9003649D0 /* StoryboardInstantiable.swift in Sources */,
 				46BCC43F1FD3981E003649D0 /* HomeTimeLineViewController.swift in Sources */,
 				46BCC4061FD28889003649D0 /* UIAlertController.swift in Sources */,
-<<<<<<< touyou
 				46BCC4371FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
-=======
-				8911C11B1FD38C240027EC50 /* HomeTimeLineCollectionViewCell.swift in Sources */,
->>>>>>> master
 				46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */,
 				46BCC4241FD2AB73003649D0 /* StampCollectionViewController.swift in Sources */,
 				46BCC4131FD288E9003649D0 /* NibInstantiable.swift in Sources */,

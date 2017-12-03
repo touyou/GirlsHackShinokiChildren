@@ -27,6 +27,14 @@ class AccountViewController: UIViewController {
             addChildViewController(viewController)
         }
     }
+    @IBOutlet weak var barButton: UIBarButtonItem! {
+        
+        didSet {
+            
+            let image = UIImage(named: "stampcard")!.withRenderingMode(.alwaysOriginal)
+            barButton.image = image
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

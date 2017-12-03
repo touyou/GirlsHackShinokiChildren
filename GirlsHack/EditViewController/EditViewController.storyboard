@@ -75,7 +75,6 @@
                     <connections>
                         <outlet property="collectionView" destination="pcJ-kp-K1A" id="niQ-VQ-EeW"/>
                         <outlet property="previewImageView" destination="pQW-8H-JOr" id="zFV-PN-8HI"/>
-                        <outlet property="touchUpInsideNextButton" destination="NO3-fY-qJa" id="LwE-Xc-QH7"/>
                         <segue destination="K9P-sL-zHX" kind="show" identifier="toMessageView" id="0Zu-Lk-Wmh"/>
                     </connections>
                 </viewController>

@@ -10,7 +10,7 @@ import UIKit
 import XLPagerTabStrip
 
 
-class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICollectionViewDataSource,UICollectionViewDelegate {
+class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider {
 
     @IBOutlet weak var collectionView: UICollectionView! {
 
@@ -22,34 +22,6 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
     }
     // タブのタイトルを設定
     var itemInfo: IndicatorInfo = IndicatorInfo (image: #imageLiteral(resourceName: "timeline icon"), highlightedImage: #imageLiteral(resourceName: "timeline icon_on"))
-    //データの個数を返すメソッド
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-    {
-        return 2
-    }
-
-    //データを返すメソッド
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
-        let cell: HomeTimeLineCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-        cell.backgroundColor = .white
-
-        let imgArray = [UIImage(named: "timeline01.png"), UIImage(named: "timeline02.png")]
-        //セルの画像を設定する
-        cell.imageView.image = imgArray[indexPath.row]
-
-        return cell
-    }
-
-    //セル選択時に呼び出されるメソッド
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell: HomeTimeLineCollectionViewCell = collectionView.cellForItem(at: indexPath) as! HomeTimeLineCollectionViewCell
-
-        //詳細ページへ遷移
-        let actView = ActivityViewController.instantiate()
-        UIApplication.shared.topPresentedNavigationController?.pushViewController(actView, animated: true)
-
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,7 +48,39 @@ class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider, UICol
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+extension HomeTimeLineViewController: UICollectionViewDataSource {
+    
+    //データの個数を返すメソッド
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    //データを返すメソッド
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: HomeTimeLineCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+        cell.backgroundColor = .white
+        
+        let imgArray = [UIImage(named: "timeline01.png"), UIImage(named: "timeline02.png")]
+        //セルの画像を設定する
+        cell.imageView.image = imgArray[indexPath.row % 2]
+        
+        return cell
+    }
+}
+
+extension HomeTimeLineViewController: UICollectionViewDelegate {
+    
+    //セル選択時に呼び出されるメソッド
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell: HomeTimeLineCollectionViewCell = collectionView.cellForItem(at: indexPath) as! HomeTimeLineCollectionViewCell
+        
+        //詳細ページへ遷移
+        let actView = ActivityViewController.instantiate()
+        UIApplication.shared.topPresentedNavigationController?.pushViewController(actView, animated: true)
+        
+    }
 }
 
 extension HomeTimeLineViewController: UICollectionViewDelegateFlowLayout {

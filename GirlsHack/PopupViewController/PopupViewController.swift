@@ -29,6 +29,25 @@ class PopupViewController: UIViewController {
     
     @IBAction func touchUpInsideButton(_ sender: Any) {
         
-        dismiss(animated: true, completion: nil)
+        let window = objc_getAssociatedObject(UIApplication.shared, &HomeViewController.kAssocKeyWindow) as! UIWindow
+        
+        UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve, .curveEaseIn], animations: {
+            
+            window.alpha = 0
+        }, completion: { _ in
+            
+            window.rootViewController?.view.removeFromSuperview()
+            window.rootViewController = nil
+            objc_setAssociatedObject(UIApplication.shared, &HomeViewController.kAssocKeyWindow, nil, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            
+            guard let nextWindow = UIApplication.shared.delegate?.window as? UIWindow else {
+                
+                // TODO: Some window
+                return
+            }
+            nextWindow.makeKeyAndVisible()
+        })
     }
 }
+
+extension PopupViewController: StoryboardInstantiable {}

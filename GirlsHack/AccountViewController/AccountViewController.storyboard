@@ -92,7 +92,7 @@
                         <viewLayoutGuide key="safeArea" id="GT2-0y-Q36"/>
                     </view>
                     <navigationItem key="navigationItem" id="fM9-BG-u57">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="1yS-PB-geZ">
+                        <barButtonItem key="rightBarButtonItem" image="stampcard" id="1yS-PB-geZ">
                             <connections>
                                 <action selector="touchUpInsideStampButton:" destination="p78-hA-KZ8" id="3wd-CS-I4t"/>
                             </connections>
@@ -100,6 +100,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="barButton" destination="1yS-PB-geZ" id="XB2-Bs-CAv"/>
                         <outlet property="containerView" destination="FiK-fY-6QZ" id="1gt-vW-f38"/>
                         <outlet property="iconImageView" destination="X3f-vA-kTq" id="qHq-0J-LTW"/>
                     </connections>
@@ -111,5 +112,6 @@
     </scenes>
     <resources>
         <image name="IMG_4039.JPG" width="2048" height="1365"/>
+        <image name="stampcard" width="60" height="44"/>
     </resources>
 </document>

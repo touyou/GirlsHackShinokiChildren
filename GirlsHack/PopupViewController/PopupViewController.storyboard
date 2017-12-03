@@ -18,36 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lHX-px-beb">
-                                <rect key="frame" x="50" y="258" width="275" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_img" translatesAutoresizingMaskIntoConstraints="NO" id="lHX-px-beb">
+                                <rect key="frame" x="50" y="228.5" width="275" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="vyO-du-KFF"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="おはよう！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC5-N5-tba">
-                                <rect key="frame" x="50" y="120" width="275" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uX9-ZV-6oY">
-                                <rect key="frame" x="137" y="558" width="100" height="59"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uX9-ZV-6oY">
+                                <rect key="frame" x="102" y="528.5" width="170" height="88.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="gp1-tO-UXk"/>
+                                    <constraint firstAttribute="width" constant="170" id="gp1-tO-UXk"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="popup_btn">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -60,28 +42,25 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lHX-px-beb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iC5-N5-tba" secondAttribute="bottom" constant="10" id="0WL-19-kFh"/>
                             <constraint firstItem="uX9-ZV-6oY" firstAttribute="centerX" secondItem="bu6-O5-hZJ" secondAttribute="centerX" id="2Lt-ok-jvZ"/>
-                            <constraint firstItem="iC5-N5-tba" firstAttribute="width" secondItem="lHX-px-beb" secondAttribute="width" id="DVb-TC-NXV"/>
-                            <constraint firstItem="iC5-N5-tba" firstAttribute="top" secondItem="drg-yf-vIc" secondAttribute="top" constant="100" id="Ejw-o8-0sF"/>
                             <constraint firstItem="uX9-ZV-6oY" firstAttribute="top" secondItem="lHX-px-beb" secondAttribute="bottom" constant="150" id="FiU-Hw-v0V"/>
                             <constraint firstItem="lHX-px-beb" firstAttribute="leading" secondItem="drg-yf-vIc" secondAttribute="leading" constant="50" id="OvH-vu-fXF"/>
                             <constraint firstItem="drg-yf-vIc" firstAttribute="bottom" secondItem="uX9-ZV-6oY" secondAttribute="bottom" constant="50" id="cUa-OD-wfg"/>
-                            <constraint firstItem="lHX-px-beb" firstAttribute="centerY" secondItem="bu6-O5-hZJ" secondAttribute="centerY" id="gqD-DK-XJy"/>
+                            <constraint firstItem="lHX-px-beb" firstAttribute="centerY" secondItem="bu6-O5-hZJ" secondAttribute="centerY" constant="-30" id="gqD-DK-XJy"/>
                             <constraint firstItem="lHX-px-beb" firstAttribute="centerX" secondItem="bu6-O5-hZJ" secondAttribute="centerX" id="kEd-1w-XFn"/>
-                            <constraint firstItem="iC5-N5-tba" firstAttribute="centerX" secondItem="bu6-O5-hZJ" secondAttribute="centerX" id="vWl-Ut-Dfp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="drg-yf-vIc"/>
                     </view>
-                    <connections>
-                        <outlet property="messageLabel" destination="iC5-N5-tba" id="kax-1i-zuZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEF-WH-9r1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-551.20000000000005" y="-338.68065967016497"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="popup_btn" width="174" height="43"/>
+        <image name="popup_img" width="312" height="329"/>
+    </resources>
 </document>

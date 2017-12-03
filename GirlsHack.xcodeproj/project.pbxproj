@@ -47,6 +47,9 @@
 		4664FA401FD3DDE00030A171 /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA3F1FD3DDE00030A171 /* photo3.jpg */; };
 		4664FA421FD3E0C90030A171 /* IMG_4049.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA411FD3E0C80030A171 /* IMG_4049.JPG */; };
 		4664FA451FD3E8470030A171 /* IMG_4039.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA441FD3E8470030A171 /* IMG_4039.JPG */; };
+		4664FA4F1FD3F7C60030A171 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA4C1FD3F7C40030A171 /* icon.png */; };
+		4664FA501FD3F7C60030A171 /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA4D1FD3F7C50030A171 /* icon@3x.png */; };
+		4664FA511FD3F7C60030A171 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4664FA4E1FD3F7C50030A171 /* icon@2x.png */; };
 		46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */; };
 		46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */; };
 		46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */; };
@@ -129,6 +132,9 @@
 		4664FA3F1FD3DDE00030A171 /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
 		4664FA411FD3E0C80030A171 /* IMG_4049.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4049.JPG; sourceTree = "<group>"; };
 		4664FA441FD3E8470030A171 /* IMG_4039.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4039.JPG; sourceTree = "<group>"; };
+		4664FA4C1FD3F7C40030A171 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4664FA4D1FD3F7C50030A171 /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
+		4664FA4E1FD3F7C50030A171 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		46BCC3C41FD26CA4003649D0 /* GirlsHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -255,6 +261,9 @@
 		46BCC3C61FD26CA4003649D0 /* GirlsHack */ = {
 			isa = PBXGroup;
 			children = (
+				4664FA4C1FD3F7C40030A171 /* icon.png */,
+				4664FA4E1FD3F7C50030A171 /* icon@2x.png */,
+				4664FA4D1FD3F7C50030A171 /* icon@3x.png */,
 				58BA42401FD3A949006C9C60 /* assets */,
 				46BCC42A1FD2ECFE003649D0 /* Model */,
 				46BCC41A1FD2A43E003649D0 /* PopupViewController */,
@@ -500,6 +509,7 @@
 				4664FA371FD3DD630030A171 /* timeline02.png in Resources */,
 				4664FA3E1FD3DDC60030A171 /* photo1.jpg in Resources */,
 				4664FA131FD3BE110030A171 /* searchicon_navbar.png in Resources */,
+				4664FA511FD3F7C60030A171 /* icon@2x.png in Resources */,
 				4664FA221FD3CEE70030A171 /* AccountContentsViewController.storyboard in Resources */,
 				4664F9FA1FD3AF560030A171 /* EditImageCollectionViewCell.xib in Resources */,
 				4664FA341FD3DD630030A171 /* timeline01@3x.png in Resources */,
@@ -511,10 +521,12 @@
 				46BCC3F41FD27C96003649D0 /* (null) in Resources */,
 				4664FA451FD3E8470030A171 /* IMG_4039.JPG in Resources */,
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
+				4664FA4F1FD3F7C60030A171 /* icon.png in Resources */,
 				4664FA001FD3AFDB0030A171 /* EditButtonCollectionViewCell.xib in Resources */,
 				46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */,
 				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
 				46BCC3CF1FD26CA4003649D0 /* Assets.xcassets in Resources */,
+				4664FA501FD3F7C60030A171 /* icon@3x.png in Resources */,
 				46BCC3E51FD27BE1003649D0 /* ActivityViewController.storyboard in Resources */,
 				4664FA401FD3DDE00030A171 /* photo3.jpg in Resources */,
 				46BCC4431FD39998003649D0 /* HomeTimeLineViewController.storyboard in Resources */,

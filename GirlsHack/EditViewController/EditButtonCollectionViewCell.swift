@@ -9,6 +9,7 @@
 import UIKit
 
 class EditButtonCollectionViewCell: UICollectionViewCell, NibLoadable, Reusable {
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {

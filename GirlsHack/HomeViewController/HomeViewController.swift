@@ -64,7 +64,20 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        performSegue(withIdentifier: "popupNotification", sender: nil)
+        let newWindow = UIWindow()
+        newWindow.frame = UIScreen.main.bounds
+        newWindow.alpha = 0.0
+        newWindow.rootViewController = PopupViewController.instantiate()
+        newWindow.backgroundColor = UIColor(white: 0, alpha: 0.6)
+        newWindow.windowLevel = UIWindowLevelNormal + 5
+        newWindow.makeKeyAndVisible()
+        
+        objc_setAssociatedObject(UIApplication.shared, &HomeViewController.kAssocKeyWindow, newWindow, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        
+        UIView.transition(with: newWindow, duration: 0.2, options: [.transitionCrossDissolve, .curveEaseIn], animations: {
+            
+            newWindow.alpha = 1.0
+        }, completion: { finished in})
     }
 
     override func viewDidAppear(_ animated: Bool) {

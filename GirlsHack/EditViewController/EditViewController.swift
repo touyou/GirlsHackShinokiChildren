@@ -113,6 +113,7 @@ extension EditViewController: UICollectionViewDataSource {
             let cell: EditButtonCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
             
             cell.titleLabel.text = indexPath.row == 0 ? "カメラで撮る" : "他の写真を選ぶ"
+            cell.imageView.image = indexPath.row == 0 ? #imageLiteral(resourceName: "Camera Icon") : #imageLiteral(resourceName: "libraryicon")
             
             return cell
         }

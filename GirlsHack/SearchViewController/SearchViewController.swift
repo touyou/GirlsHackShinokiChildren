@@ -7,29 +7,92 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SearchViewController: UIViewController {
-
+    
+    @IBOutlet weak var collectionView: UICollectionView! {
+        
+        didSet {
+            collectionView.dataSource = self
+            collectionView.delegate = self
+            collectionView.register(SearchResultCollectionViewCell.self)
+        }
+    }
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var searchPost: [Post] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        AccountHelper.shared.fetchQuery(for: "posts", limit: 100).getDocuments() { snapshot, err in
+            
+            if let err = err {
+                
+                print("Fetch Error: \(err.localizedDescription)")
+            } else {
+                
+                guard let snapshot = snapshot else {
+                    
+                    return
+                }
+                
+                self.searchPost = snapshot.documents.map {
+                    
+                    Post(dictionary: $0.data())!
+                }
+            }
+        }
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+// MARK: - CollectionViewDataSource
+
+extension SearchViewController: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return searchPost.count
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: SearchResultCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+        
+        cell.imageView.kf.setImage(with: URL(string: searchPost[indexPath.row].photoURL))
+        
+        return cell
+    }
+}
 
+// MARK: - CollectionViewFlowLayout
+
+extension SearchViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let cellWidth = floor(collectionView.bounds.width / 2)
+        
+        return CGSize(width: cellWidth, height: cellWidth / 4.0 * 3.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        return UIEdgeInsets.zero
+    }
 }

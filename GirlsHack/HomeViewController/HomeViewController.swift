@@ -11,7 +11,10 @@ import XLPagerTabStrip
 
 class HomeViewController: ButtonBarPagerTabStripViewController {
 
+    static var kAssocKeyWindow: String?
+
     override func viewDidLoad() {
+        
         settings.style.buttonBarBackgroundColor = .white
         // ButtonBarItemの背景色
         settings.style.buttonBarItemBackgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -25,6 +28,7 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarLeftContentInset = 0
         settings.style.buttonBarRightContentInset = 0
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
+            
             guard changeCurrentIndex == true else { return }
             // 選択されていないボタンのテキスト色
             oldCell?.label.textColor = .black
@@ -35,13 +39,21 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        performSegue(withIdentifier: "popupNotification", sender: nil)
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+//        AccountHelper.shared.logIn {}
+    }
+    
     /// ViewControllers
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
 
         // 追加したViewControllerを指定
-        let firstVC = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateViewController(withIdentifier: "HomeTimeLine")
-        let secondVC = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateViewController(withIdentifier: "HomeMap")
+        let firstVC = HomeTimeLineViewController.instantiate()
+        let secondVC = HomeMapViewController.instantiate()
 
         // ViewControllersに入れる
         let childViewControllers:[UIViewController] = [firstVC, secondVC]
@@ -52,16 +64,27 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
+    @IBAction func tappedStampButton(_ sender: Any) {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let newWindow = UIWindow()
+        newWindow.frame = UIScreen.main.bounds
+        newWindow.alpha = 0.0
+        newWindow.rootViewController = StampViewController.instantiate()
+        newWindow.backgroundColor = UIColor(white: 0, alpha: 0.6)
+        newWindow.windowLevel = UIWindowLevelNormal + 5
+        newWindow.makeKeyAndVisible()
+
+        objc_setAssociatedObject(UIApplication.shared, &HomeViewController.kAssocKeyWindow, newWindow, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+
+        UIView.transition(with: newWindow, duration: 0.2, options: [.transitionCrossDissolve, .curveEaseIn], animations: {
+
+            newWindow.alpha = 1.0
+        }, completion: { finished in})
     }
-    */
 
+    @IBAction func tappedSearchButton(_ sender: Any) {
+
+        performSegue(withIdentifier: "toSearchView", sender: nil)
+    }
 }

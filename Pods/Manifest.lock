@@ -15,6 +15,9 @@ PODS:
   - Firebase/Firestore (4.7.0):
     - Firebase/Core
     - FirebaseFirestore (= 0.9.3)
+  - Firebase/Storage (4.7.0):
+    - Firebase/Core
+    - FirebaseStorage (= 2.1.0)
   - FirebaseAnalytics (4.0.5):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -34,6 +37,10 @@ PODS:
     - leveldb-library (~> 1.18)
     - Protobuf (~> 3.1)
   - FirebaseInstanceID (2.0.7)
+  - FirebaseStorage (2.1.0):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseUI/Auth (4.5.0):
     - Firebase/Auth (~> 4.2)
   - GoogleToolboxForMac/DebugUtils (2.1.3):
@@ -66,6 +73,7 @@ PODS:
     - gRPC-Core (= 1.7.1)
     - gRPC-RxLibrary (= 1.7.1)
   - GTMSessionFetcher/Core (1.1.12)
+  - Kingfisher (4.4.0)
   - leveldb-library (1.20)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
@@ -73,7 +81,11 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Protobuf (3.5.0)
-  - RAMAnimatedTabBarController (3.0.1)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
   - XLPagerTabStrip (8.0.0)
   - ZFRippleButton (0.6)
 
@@ -81,8 +93,10 @@ DEPENDENCIES:
   - BubbleTransition (~> 2.0.0)
   - Firebase/Core
   - Firebase/Firestore
+  - Firebase/Storage
   - FirebaseUI/Auth
-  - RAMAnimatedTabBarController
+  - Kingfisher
+  - RealmSwift
   - XLPagerTabStrip (~> 8.0)
   - ZFRippleButton
 
@@ -95,6 +109,7 @@ SPEC CHECKSUMS:
   FirebaseCore: 6cf108b63997bc08c04a1ffa55a3ac0d71a59ffc
   FirebaseFirestore: 0b62fdbe420f2f88b6b2037ba4d92bbd4525e04a
   FirebaseInstanceID: 148c25c986c8699e67304b114e365713dce467f2
+  FirebaseStorage: 0930e97994dc79b404179bdfafb6b16f59433a82
   FirebaseUI: 883482fea73b73bbb488c55176f4c6ad128957eb
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   gRPC: b56decfd0094854d2ccfe80c8fb767237dace3be
@@ -102,13 +117,15 @@ SPEC CHECKSUMS:
   gRPC-ProtoRPC: b7259f51cbc19b77c7a38d96f52a00c3a4ea1637
   gRPC-RxLibrary: 4f46343e74e74a7ee8373ffeeaf772dfb330cbd7
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
+  Kingfisher: 62a43e03047a1ac5159d0be3ac62673ef4b99cc3
   leveldb-library: 4f9eedf84ab46b4fa3b7893bf30714b2a1a74022
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
-  RAMAnimatedTabBarController: 78bafa7a1c1b162f0d4a86a936c0d1ee4a06ffcc
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
   XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
   ZFRippleButton: 62ea35e209757704dea697d66489fe69c13d7b77
 
-PODFILE CHECKSUM: 62a3a09c3c97a8f9b7bc3319ab49529d925bbe3a
+PODFILE CHECKSUM: 4e71de0ed2eb30a6b6df95f9824c16c19ebc8456
 
 COCOAPODS: 1.3.1

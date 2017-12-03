@@ -40,3 +40,5 @@ class HomeMapViewController: UIViewController, IndicatorInfoProvider {    // 「
     */
 
 }
+
+extension HomeMapViewController: StoryboardInstantiable {}

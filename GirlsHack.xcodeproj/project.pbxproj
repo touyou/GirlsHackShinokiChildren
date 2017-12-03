@@ -19,7 +19,7 @@
 		46BCC3EF1FD27C41003649D0 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3EE1FD27C41003649D0 /* ActivityViewController.swift */; };
 		46BCC3F11FD27C4A003649D0 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F01FD27C4A003649D0 /* EditViewController.swift */; };
 		46BCC3F31FD27C53003649D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3F21FD27C53003649D0 /* HomeViewController.swift */; };
-		46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3E11FD27BD1003649D0 /* AccountViewController.storyboard */; };
+		46BCC3F41FD27C96003649D0 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */; };
 		46BCC4041FD28889003649D0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */; };
 		46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */; };
@@ -53,6 +53,8 @@
 		46BCC4371FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4361FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift */; };
 		46BCC43A1FD392E8003649D0 /* SearchResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC4381FD392E8003649D0 /* SearchResultCollectionViewCell.swift */; };
 		46BCC43B1FD392E8003649D0 /* SearchResultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC4391FD392E8003649D0 /* SearchResultCollectionViewCell.xib */; };
+		46BCC43E1FD3981E003649D0 /* HomeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC43C1FD3981E003649D0 /* HomeMapViewController.swift */; };
+		46BCC43F1FD3981E003649D0 /* HomeTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */; };
 		DD78474E0C18D1CD7F88ACC5 /* Pods_GirlsHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +106,8 @@
 		46BCC4361FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extensions.swift"; sourceTree = "<group>"; };
 		46BCC4381FD392E8003649D0 /* SearchResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		46BCC4391FD392E8003649D0 /* SearchResultCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCollectionViewCell.xib; sourceTree = "<group>"; };
+		46BCC43C1FD3981E003649D0 /* HomeMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMapViewController.swift; sourceTree = "<group>"; };
+		46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTimeLineViewController.swift; sourceTree = "<group>"; };
 		CE2D86CED39C26ADF7F43C53 /* Pods_GirlsHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D126049D0EE04FC4A91F2C72 /* Pods-GirlsHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BAD69A63A8816B75FB167F /* Pods-GirlsHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsHack/Pods-GirlsHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,8 +183,9 @@
 		46BCC3DC1FD27B96003649D0 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				46BCC43C1FD3981E003649D0 /* HomeMapViewController.swift */,
+				46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */,
 				46BCC3E81FD27BEC003649D0 /* HomeViewController.storyboard */,
-				89C6C68D1FD2B12000057CAD /* HomeTimeLineViewController.swift */,
 				46BCC3F21FD27C53003649D0 /* HomeViewController.swift */,
 				46BCC41F1FD2A929003649D0 /* StampViewController.swift */,
 				46BCC4211FD2A935003649D0 /* StampViewController.storyboard */,
@@ -226,7 +231,6 @@
 		46BCC3E01FD27BC1003649D0 /* AccountViewController */ = {
 			isa = PBXGroup;
 			children = (
-				89C6C68B1FD2A8E100057CAD /* AccountViewController.storyboard */,
 				46BCC3EA1FD27C2F003649D0 /* AccountViewController.swift */,
 			);
 			path = AccountViewController;
@@ -340,9 +344,8 @@
 				46BCC4311FD2F43E003649D0 /* StampPageViewController.storyboard in Resources */,
 				46BCC4301FD2F1A0003649D0 /* StampCollectionViewCell.xib in Resources */,
 				46BCC41E1FD2A478003649D0 /* PopupViewController.storyboard in Resources */,
-				46BCC3F41FD27C96003649D0 /* AccountViewController.storyboard in Resources */,
+				46BCC3F41FD27C96003649D0 /* (null) in Resources */,
 				46BCC3D21FD26CA4003649D0 /* LaunchScreen.storyboard in Resources */,
-				89C6C68C1FD2A8E200057CAD /* AccountViewController.storyboard in Resources */,
 				46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */,
 				46BCC3E31FD27BDB003649D0 /* EditViewController.storyboard in Resources */,
 				46BCC3E91FD27BEC003649D0 /* HomeViewController.storyboard in Resources */,
@@ -449,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BCC43E1FD3981E003649D0 /* HomeMapViewController.swift in Sources */,
 				46BCC3EF1FD27C41003649D0 /* ActivityViewController.swift in Sources */,
 				46BCC4091FD28889003649D0 /* UITableView+Extensions.swift in Sources */,
 				46BCC3ED1FD27C39003649D0 /* SearchViewController.swift in Sources */,
@@ -466,10 +470,9 @@
 				46BCC42C1FD2ED0A003649D0 /* Stamp.swift in Sources */,
 				46BCC4171FD2893D003649D0 /* AccountHelper.swift in Sources */,
 				46BCC4081FD28889003649D0 /* UIApplication+Extensions.swift in Sources */,
-				89C6C68E1FD2B12000057CAD /* HomeTimeLineViewController.swift in Sources */,
 				46BCC40C1FD28889003649D0 /* UITabBarController+Extensions.swift in Sources */,
-				89C6C6921FD2B19F00057CAD /* HomeMapViewController.swift in Sources */,
 				46BCC4121FD288E9003649D0 /* StoryboardInstantiable.swift in Sources */,
+				46BCC43F1FD3981E003649D0 /* HomeTimeLineViewController.swift in Sources */,
 				46BCC4061FD28889003649D0 /* UIAlertController.swift in Sources */,
 				46BCC4371FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
 				46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */,

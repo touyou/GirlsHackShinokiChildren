@@ -47,4 +47,4 @@ iPhone7期三人組のチーム
 
 ## ライセンス
 
-
+[MIT](LICENSE)

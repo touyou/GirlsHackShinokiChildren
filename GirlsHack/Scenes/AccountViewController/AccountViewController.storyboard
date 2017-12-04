@@ -29,15 +29,23 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="134"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@chanue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfG-Ry-oOt">
-                                        <rect key="frame" x="25" y="57" width="69.5" height="20"/>
+                                        <rect key="frame" x="25" y="50" width="69.5" height="20"/>
                                         <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="17"/>
                                         <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1997(20)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tie-vS-5tB">
+                                        <rect key="frame" x="35" y="80" width="39" height="12"/>
+                                        <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="10"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="sfG-Ry-oOt" firstAttribute="centerY" secondItem="kdv-sx-Iuv" secondAttribute="centerY" id="O25-u9-OBA"/>
+                                    <constraint firstItem="tie-vS-5tB" firstAttribute="top" secondItem="sfG-Ry-oOt" secondAttribute="bottom" constant="10" id="pFn-rd-r7Q"/>
+                                    <constraint firstItem="sfG-Ry-oOt" firstAttribute="top" secondItem="kdv-sx-Iuv" secondAttribute="top" constant="50" id="pqP-vF-3ql"/>
+                                    <constraint firstItem="tie-vS-5tB" firstAttribute="leading" secondItem="sfG-Ry-oOt" secondAttribute="leading" constant="10" id="y0U-wt-sP4"/>
                                     <constraint firstItem="sfG-Ry-oOt" firstAttribute="leading" secondItem="kdv-sx-Iuv" secondAttribute="leading" constant="25" id="ync-uo-sKZ"/>
                                 </constraints>
                             </view>
@@ -112,6 +120,6 @@
     </scenes>
     <resources>
         <image name="IMG_4039.JPG" width="2048" height="1365"/>
-        <image name="stampcard" width="60" height="44"/>
+        <image name="stampcard" width="50" height="36"/>
     </resources>
 </document>

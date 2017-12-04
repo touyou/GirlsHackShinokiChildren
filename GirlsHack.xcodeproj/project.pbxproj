@@ -65,7 +65,7 @@
 		46BCC3F81FD27EF0003649D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */; };
 		46BCC4041FD28889003649D0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */; };
 		46BCC4051FD28889003649D0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */; };
-		46BCC4061FD28889003649D0 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FC1FD28882003649D0 /* UIAlertController.swift */; };
+		46BCC4061FD28889003649D0 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FC1FD28882003649D0 /* UIAlertController+Extensions.swift */; };
 		46BCC4071FD28889003649D0 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FD1FD28883003649D0 /* UINavigationController+Extensions.swift */; };
 		46BCC4081FD28889003649D0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FE1FD28884003649D0 /* UIApplication+Extensions.swift */; };
 		46BCC4091FD28889003649D0 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCC3FF1FD28885003649D0 /* UITableView+Extensions.swift */; };
@@ -151,7 +151,7 @@
 		46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
-		46BCC3FC1FD28882003649D0 /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		46BCC3FC1FD28882003649D0 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		46BCC3FD1FD28883003649D0 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		46BCC3FE1FD28884003649D0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		46BCC3FF1FD28885003649D0 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
@@ -239,6 +239,47 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		469FB4631FD4DCA2007BED64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46BCC3FC1FD28882003649D0 /* UIAlertController+Extensions.swift */,
+				46BCC3FE1FD28884003649D0 /* UIApplication+Extensions.swift */,
+				46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */,
+				46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */,
+				46BCC4011FD28887003649D0 /* UIImage+Extensions.swift */,
+				46BCC3FD1FD28883003649D0 /* UINavigationController+Extensions.swift */,
+				46BCC4021FD28888003649D0 /* UITabBarController+Extensions.swift */,
+				46BCC3FF1FD28885003649D0 /* UITableView+Extensions.swift */,
+				46BCC4001FD28886003649D0 /* UIView+Extensions.swift */,
+				46BCC4031FD28888003649D0 /* UIViewController+Extensions.swift */,
+				46BCC4361FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		469FB4641FD4DCBF007BED64 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				46BCC40F1FD288E7003649D0 /* NibInstantiable.swift */,
+				46BCC4111FD288E9003649D0 /* NibLoadable.swift */,
+				46BCC4101FD288E8003649D0 /* Reusable.swift */,
+				46BCC40E1FD288E6003649D0 /* StoryboardInstantiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		469FB4651FD4DD0B007BED64 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				46BCC3E01FD27BC1003649D0 /* AccountViewController */,
+				46BCC3DF1FD27BB7003649D0 /* SearchViewController */,
+				46BCC3DE1FD27BAC003649D0 /* ActivityViewController */,
+				46BCC3DD1FD27B9F003649D0 /* EditViewController */,
+				46BCC3DC1FD27B96003649D0 /* HomeViewController */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		46BCC3BB1FD26CA4003649D0 = {
 			isa = PBXGroup;
 			children = (
@@ -261,20 +302,13 @@
 		46BCC3C61FD26CA4003649D0 /* GirlsHack */ = {
 			isa = PBXGroup;
 			children = (
-				4664FA4C1FD3F7C40030A171 /* icon.png */,
-				4664FA4E1FD3F7C50030A171 /* icon@2x.png */,
-				4664FA4D1FD3F7C50030A171 /* icon@3x.png */,
-				58BA42401FD3A949006C9C60 /* assets */,
+				469FB4651FD4DD0B007BED64 /* Scenes */,
+				58BA42401FD3A949006C9C60 /* Assets */,
+				469FB4641FD4DCBF007BED64 /* Protocols */,
+				469FB4631FD4DCA2007BED64 /* Extensions */,
 				46BCC42A1FD2ECFE003649D0 /* Model */,
-				46BCC41A1FD2A43E003649D0 /* PopupViewController */,
 				46BCC3F91FD28866003649D0 /* Helper */,
-				46BCC3E01FD27BC1003649D0 /* AccountViewController */,
-				46BCC3DF1FD27BB7003649D0 /* SearchViewController */,
-				46BCC3DE1FD27BAC003649D0 /* ActivityViewController */,
-				46BCC3DD1FD27B9F003649D0 /* EditViewController */,
-				46BCC3DC1FD27B96003649D0 /* HomeViewController */,
 				46BCC3C71FD26CA4003649D0 /* AppDelegate.swift */,
-				46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */,
 				46BCC3D01FD26CA4003649D0 /* LaunchScreen.storyboard */,
 				46BCC3F71FD27EF0003649D0 /* GoogleService-Info.plist */,
 				46BCC3D31FD26CA4003649D0 /* Info.plist */,
@@ -285,22 +319,16 @@
 		46BCC3DC1FD27B96003649D0 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				46BCC41B1FD2A46C003649D0 /* PopupViewController.swift */,
+				46BCC41D1FD2A478003649D0 /* PopupViewController.storyboard */,
 				4664FA181FD3C5160030A171 /* HomeTimeLineCollectionViewCell.swift */,
 				4664FA171FD3C5160030A171 /* HomeTimeLineCollectionViewCell.xib */,
-				4664FA191FD3C5160030A171 /* StampPageViewController.storyboard */,
 				46BCC43C1FD3981E003649D0 /* HomeMapViewController.swift */,
 				46BCC4401FD39984003649D0 /* HomeMapViewController.storyboard */,
 				46BCC43D1FD3981E003649D0 /* HomeTimeLineViewController.swift */,
 				46BCC4421FD39998003649D0 /* HomeTimeLineViewController.storyboard */,
 				46BCC3F21FD27C53003649D0 /* HomeViewController.swift */,
 				4664F9E91FD3A1290030A171 /* HomeViewController.storyboard */,
-				46BCC41F1FD2A929003649D0 /* StampViewController.swift */,
-				46BCC4211FD2A935003649D0 /* StampViewController.storyboard */,
-				46BCC4251FD2E339003649D0 /* StampPageViewController.swift */,
-				46BCC4231FD2AB73003649D0 /* StampCollectionViewController.swift */,
-				46BCC4281FD2E382003649D0 /* StampCollectionViewController.storyboard */,
-				46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */,
-				46BCC42E1FD2F1A0003649D0 /* StampCollectionViewCell.xib */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -308,8 +336,8 @@
 		46BCC3DD1FD27B9F003649D0 /* EditViewController */ = {
 			isa = PBXGroup;
 			children = (
-				46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */,
 				46BCC3F01FD27C4A003649D0 /* EditViewController.swift */,
+				46BCC3E21FD27BDB003649D0 /* EditViewController.storyboard */,
 				4664F9F71FD3AF560030A171 /* EditImageCollectionViewCell.swift */,
 				4664F9F81FD3AF560030A171 /* EditImageCollectionViewCell.xib */,
 				4664F9FD1FD3AFDB0030A171 /* EditButtonCollectionViewCell.swift */,
@@ -321,8 +349,8 @@
 		46BCC3DE1FD27BAC003649D0 /* ActivityViewController */ = {
 			isa = PBXGroup;
 			children = (
-				46BCC3E41FD27BE1003649D0 /* ActivityViewController.storyboard */,
 				46BCC3EE1FD27C41003649D0 /* ActivityViewController.swift */,
+				46BCC3E41FD27BE1003649D0 /* ActivityViewController.storyboard */,
 			);
 			path = ActivityViewController;
 			sourceTree = "<group>";
@@ -330,8 +358,8 @@
 		46BCC3DF1FD27BB7003649D0 /* SearchViewController */ = {
 			isa = PBXGroup;
 			children = (
-				46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */,
 				46BCC3EC1FD27C39003649D0 /* SearchViewController.swift */,
+				46BCC3E61FD27BE7003649D0 /* SearchViewController.storyboard */,
 				46BCC4381FD392E8003649D0 /* SearchResultCollectionViewCell.swift */,
 				46BCC4391FD392E8003649D0 /* SearchResultCollectionViewCell.xib */,
 			);
@@ -347,6 +375,14 @@
 				4664FA211FD3CEE70030A171 /* AccountContentsViewController.storyboard */,
 				4664FA231FD3D0820030A171 /* AccountTimelineViewController.swift */,
 				4664FA251FD3D0980030A171 /* AccountTimelineViewController.storyboard */,
+				46BCC41F1FD2A929003649D0 /* StampViewController.swift */,
+				46BCC4211FD2A935003649D0 /* StampViewController.storyboard */,
+				46BCC4251FD2E339003649D0 /* StampPageViewController.swift */,
+				4664FA191FD3C5160030A171 /* StampPageViewController.storyboard */,
+				46BCC4231FD2AB73003649D0 /* StampCollectionViewController.swift */,
+				46BCC4281FD2E382003649D0 /* StampCollectionViewController.storyboard */,
+				46BCC42D1FD2F1A0003649D0 /* StampCollectionViewCell.swift */,
+				46BCC42E1FD2F1A0003649D0 /* StampCollectionViewCell.xib */,
 			);
 			path = AccountViewController;
 			sourceTree = "<group>";
@@ -354,49 +390,29 @@
 		46BCC3F91FD28866003649D0 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				46BCC40F1FD288E7003649D0 /* NibInstantiable.swift */,
-				46BCC4111FD288E9003649D0 /* NibLoadable.swift */,
-				46BCC4101FD288E8003649D0 /* Reusable.swift */,
-				46BCC40E1FD288E6003649D0 /* StoryboardInstantiable.swift */,
-				46BCC3FC1FD28882003649D0 /* UIAlertController.swift */,
-				46BCC3FE1FD28884003649D0 /* UIApplication+Extensions.swift */,
-				46BCC3FB1FD28881003649D0 /* UICollectionView+Extensions.swift */,
-				46BCC3FA1FD28880003649D0 /* UIColor+Extensions.swift */,
-				46BCC4011FD28887003649D0 /* UIImage+Extensions.swift */,
-				46BCC3FD1FD28883003649D0 /* UINavigationController+Extensions.swift */,
-				46BCC4021FD28888003649D0 /* UITabBarController+Extensions.swift */,
-				46BCC3FF1FD28885003649D0 /* UITableView+Extensions.swift */,
-				46BCC4001FD28886003649D0 /* UIView+Extensions.swift */,
-				46BCC4031FD28888003649D0 /* UIViewController+Extensions.swift */,
-				46BCC4361FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift */,
-				46BCC4181FD29866003649D0 /* LocalCollection.swift */,
 				46BCC4341FD38D8B003649D0 /* VincentyHelper.swift */,
 				46BCC4161FD2893D003649D0 /* AccountHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		46BCC41A1FD2A43E003649D0 /* PopupViewController */ = {
-			isa = PBXGroup;
-			children = (
-				46BCC41B1FD2A46C003649D0 /* PopupViewController.swift */,
-				46BCC41D1FD2A478003649D0 /* PopupViewController.storyboard */,
-			);
-			path = PopupViewController;
-			sourceTree = "<group>";
-		};
 		46BCC42A1FD2ECFE003649D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				46BCC4181FD29866003649D0 /* LocalCollection.swift */,
 				46BCC42B1FD2ED0A003649D0 /* Stamp.swift */,
 				46BCC4321FD2FEE8003649D0 /* FirestoreModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		58BA42401FD3A949006C9C60 /* assets */ = {
+		58BA42401FD3A949006C9C60 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				46BCC3CE1FD26CA4003649D0 /* Assets.xcassets */,
+				4664FA4C1FD3F7C40030A171 /* icon.png */,
+				4664FA4E1FD3F7C50030A171 /* icon@2x.png */,
+				4664FA4D1FD3F7C50030A171 /* icon@3x.png */,
 				4664FA321FD3DD630030A171 /* activityView.png */,
 				4664FA2D1FD3DD620030A171 /* activityView@2x.png */,
 				4664FA2E1FD3DD620030A171 /* activityView@3x.png */,
@@ -426,7 +442,7 @@
 				4664FA441FD3E8470030A171 /* IMG_4039.JPG */,
 				58BA42411FD3A9B5006C9C60 /* LucidaGrande.ttc */,
 			);
-			path = assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -665,7 +681,7 @@
 				46BCC40C1FD28889003649D0 /* UITabBarController+Extensions.swift in Sources */,
 				46BCC4121FD288E9003649D0 /* StoryboardInstantiable.swift in Sources */,
 				46BCC43F1FD3981E003649D0 /* HomeTimeLineViewController.swift in Sources */,
-				46BCC4061FD28889003649D0 /* UIAlertController.swift in Sources */,
+				46BCC4061FD28889003649D0 /* UIAlertController+Extensions.swift in Sources */,
 				46BCC4371FD38DAA003649D0 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
 				46BCC3C81FD26CA4003649D0 /* AppDelegate.swift in Sources */,
 				46BCC4241FD2AB73003649D0 /* StampCollectionViewController.swift in Sources */,

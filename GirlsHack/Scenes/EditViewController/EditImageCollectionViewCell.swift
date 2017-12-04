@@ -14,7 +14,6 @@ class EditImageCollectionViewCell: UICollectionViewCell, NibLoadable, Reusable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     func setAssets(for asset: PHAsset) {

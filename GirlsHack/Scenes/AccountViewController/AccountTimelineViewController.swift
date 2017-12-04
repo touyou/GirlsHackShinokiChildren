@@ -30,6 +30,8 @@ class AccountTimelineViewController: UIViewController {
     
 }
 
+// MARK: - Collection View Protocols
+
 extension AccountTimelineViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -85,6 +87,8 @@ extension AccountTimelineViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+// MARK: - XLPagerTabStrip
+
 extension AccountTimelineViewController: IndicatorInfoProvider {
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
@@ -92,5 +96,7 @@ extension AccountTimelineViewController: IndicatorInfoProvider {
         return IndicatorInfo(title: titleStr)
     }
 }
+
+// MARK: - Storyboard Instantiable
 
 extension AccountTimelineViewController: StoryboardInstantiable {}

@@ -10,45 +10,24 @@ import UIKit
 import XLPagerTabStrip
 
 
-class HomeTimeLineViewController: UIViewController, IndicatorInfoProvider {
+class HomeTimeLineViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView! {
 
         didSet {
+            
             collectionView.dataSource = self
             collectionView.delegate = self
             collectionView.register(HomeTimeLineCollectionViewCell.self)
         }
     }
-    // タブのタイトルを設定
-    var itemInfo: IndicatorInfo = IndicatorInfo (image: #imageLiteral(resourceName: "timeline icon"), highlightedImage: #imageLiteral(resourceName: "timeline icon_on"))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-
-        return itemInfo
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
+
+// MARK: - CollectionView Protocols
 
 extension HomeTimeLineViewController: UICollectionViewDataSource {
     
@@ -74,12 +53,10 @@ extension HomeTimeLineViewController: UICollectionViewDelegate {
     
     //セル選択時に呼び出されるメソッド
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell: HomeTimeLineCollectionViewCell = collectionView.cellForItem(at: indexPath) as! HomeTimeLineCollectionViewCell
-        
+
         //詳細ページへ遷移
         let actView = ActivityViewController.instantiate()
         UIApplication.shared.topPresentedNavigationController?.pushViewController(actView, animated: true)
-        
     }
 }
 
@@ -107,5 +84,18 @@ extension HomeTimeLineViewController: UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets.zero
     }
 }
+
+// MARK: - XLPagerTabStrip
+
+extension HomeTimeLineViewController: IndicatorInfoProvider {
+    
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        
+        let itemInfo: IndicatorInfo = IndicatorInfo (image: #imageLiteral(resourceName: "timeline icon"), highlightedImage: #imageLiteral(resourceName: "timeline icon_on"))
+        return itemInfo
+    }
+}
+
+// MARK: - Storyboard Instantiable
 
 extension HomeTimeLineViewController: StoryboardInstantiable {}

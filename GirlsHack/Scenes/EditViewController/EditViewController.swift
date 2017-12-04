@@ -211,4 +211,6 @@ extension EditViewController: UIImagePickerControllerDelegate, UINavigationContr
     }
 }
 
+// MARK: - Storyboard Instantiable
+
 extension EditViewController: StoryboardInstantiable {}

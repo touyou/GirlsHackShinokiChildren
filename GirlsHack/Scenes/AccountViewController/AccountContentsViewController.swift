@@ -12,7 +12,6 @@ import XLPagerTabStrip
 class AccountContentsViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
 
         settings.style.buttonBarBackgroundColor = UIColor.Original.background
         settings.style.buttonBarItemBackgroundColor = UIColor.Original.background
@@ -24,7 +23,7 @@ class AccountContentsViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarItemsShouldFillAvailableWidth = true
         settings.style.buttonBarLeftContentInset = 0
         settings.style.buttonBarRightContentInset = 0
-        changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
+        changeCurrentIndexProgressive = { (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             
 //            guard let `self` = self else { return }
             guard changeCurrentIndex == true else { return }
@@ -37,6 +36,8 @@ class AccountContentsViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
     }
     
+    // MARK: XLPaagerTabStrip
+    
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         
         let viewController = AccountTimelineViewController.instantiate()
@@ -48,5 +49,7 @@ class AccountContentsViewController: ButtonBarPagerTabStripViewController {
         return [viewController, viewController2]
     }
 }
+
+// MARK: - Storyboard Instantiable
 
 extension AccountContentsViewController: StoryboardInstantiable {}

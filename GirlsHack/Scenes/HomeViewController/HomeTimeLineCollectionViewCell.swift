@@ -12,7 +12,5 @@ class HomeTimeLineCollectionViewCell: UICollectionViewCell, NibLoadable, Reusabl
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
 }

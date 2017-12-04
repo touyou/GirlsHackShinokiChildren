@@ -18,6 +18,8 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
     
     override func viewDidLoad() {
         
+        // MARK: XLPagerStrip Settings
+        
         settings.style.buttonBarBackgroundColor = UIColor(white: 1.0, alpha: 0.3)
         // ButtonBarItemの背景色
         settings.style.buttonBarItemBackgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -31,20 +33,6 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarLeftContentInset = self.view.bounds.width/2 - self.view.bounds.width/6
         settings.style.buttonBarRightContentInset = self.view.bounds.width/2 - self.view.bounds.width/6
         settings.style.buttonBarMinimumLineSpacing = self.view.bounds.width/10
-//        changeCurrentIndex = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, animated: Bool) -> Void in
-//
-//            guard let `self` = self else { return }
-//            // ボタン画像の比率
-//            oldCell?.imageView.contentMode = UIViewContentMode.scaleAspectFit
-//            newCell?.imageView.contentMode = UIViewContentMode.scaleAspectFit
-//
-//            //レンダリングモードをAlwayOriginalにして画像を読み込む。
-//            let image = UIImage(named: "menuicon_navbar")!.withRenderingMode(.alwaysOriginal)
-//            let image02 = UIImage(named: "searchicon_navbar")!.withRenderingMode(.alwaysOriginal)
-//            s
-//            self.accountButton.image = image
-//            self.searchButton.image = image02
-//        }
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             
             guard let `self` = self else { return }
@@ -63,7 +51,8 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
 
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // MARK: Popup Window
+
         let newWindow = UIWindow()
         newWindow.frame = UIScreen.main.bounds
         newWindow.alpha = 0.0
@@ -98,10 +87,6 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         return childViewControllers
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     @IBAction func touchUpInsideEdit(_ sender: Any) {
         
         let editViewController = EditViewController.instantiate()

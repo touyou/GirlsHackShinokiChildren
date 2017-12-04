@@ -96,4 +96,6 @@ extension StampCollectionViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+// MARK: - Storyboard Instantiable
+
 extension StampCollectionViewController: StoryboardInstantiable {}

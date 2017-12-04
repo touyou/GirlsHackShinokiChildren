@@ -59,4 +59,6 @@ class StampViewController: UIViewController {
     }
 }
 
+// MARK: - Storyboard Instantiable
+
 extension StampViewController: StoryboardInstantiable {}

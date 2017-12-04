@@ -63,12 +63,12 @@
                         <viewLayoutGuide key="safeArea" id="Q4g-Iy-ZPG"/>
                     </view>
                     <navigationItem key="navigationItem" id="j3w-wI-Xvq">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menuicon_navbar" id="2qj-nC-vf9">
+                        <barButtonItem key="leftBarButtonItem" id="2qj-nC-vf9">
                             <connections>
                                 <action selector="tappedStampButton:" destination="XNO-4y-OIx" id="VpK-8G-zaC"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="searchicon_navbar" id="o5K-Xj-SqJ">
+                        <barButtonItem key="rightBarButtonItem" id="o5K-Xj-SqJ">
                             <connections>
                                 <action selector="tappedSearchButton:" destination="XNO-4y-OIx" id="Hhv-lN-kVz"/>
                             </connections>
@@ -124,7 +124,5 @@
     </scenes>
     <resources>
         <image name="addButton" width="45" height="45"/>
-        <image name="menuicon_navbar" width="36" height="36"/>
-        <image name="searchicon_navbar" width="36" height="36"/>
     </resources>
 </document>

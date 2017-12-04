@@ -50,4 +50,6 @@ class PopupViewController: UIViewController {
     }
 }
 
+// MARK: - Storyboard Instantiable
+
 extension PopupViewController: StoryboardInstantiable {}
